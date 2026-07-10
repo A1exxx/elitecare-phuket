@@ -81,6 +81,8 @@ section{ position:relative; }
   margin:0 0 14px;
 }
 h1,h2,h3{ font-family:var(--font-sans); font-weight:600; color:var(--navy-900); letter-spacing:-0.01em; }
+/* Russian compounds are long enough to overflow a 320px screen unbroken. */
+h1,h2,h3,p,li{ overflow-wrap:break-word; }
 em{ font-family:var(--font-display); font-style:italic; font-weight:600; color:var(--terracotta-700); }
 
 h1{ font-size:clamp(2.4rem, 5vw, 3.8rem); line-height:1.08; }
@@ -110,7 +112,11 @@ h3{ font-size:1.2rem; line-height:1.35; }
   padding:13px 24px; border-radius:999px; font-weight:500; font-size:0.98rem;
   border:1px solid transparent; cursor:pointer;
   transition:transform var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease);
-  white-space:nowrap;
+  white-space:nowrap; max-width:100%;
+}
+/* Russian and Thai labels are long: let them wrap rather than overflow. */
+@media (max-width:520px){
+  .btn{ white-space:normal; text-align:center; }
 }
 .btn:active{ transform:scale(0.97); }
 .btn-primary{ background:var(--terracotta-700); color:var(--white); box-shadow:0 12px 28px -12px rgba(179,83,48,0.5); }
@@ -137,8 +143,14 @@ h3{ font-size:1.2rem; line-height:1.35; }
   display:flex; align-items:center; gap:32px;
 }
 .logo img{ height:34px; width:auto; }
-.nav-links{ display:flex; gap:28px; margin-right:auto; margin-left:12px; }
-.nav-links a{ font-size:0.94rem; font-weight:500; color:var(--navy-800); position:relative; padding:4px 0; }
+.nav-links{ display:flex; gap:26px; margin-right:auto; margin-left:12px; min-width:0; }
+/* Russian labels are long: let them shrink before they wrap onto two lines. */
+.nav-links a{ font-size:0.94rem; font-weight:500; color:var(--navy-800); position:relative; padding:4px 0; white-space:nowrap; }
+@media (max-width:1300px){
+  .nav-links{ gap:18px; margin-left:6px; }
+  .nav-links a{ font-size:0.88rem; }
+  .header-inner{ gap:18px; }
+}
 .nav-links a::after{
   content:""; position:absolute; left:0; right:100%; bottom:0; height:2px; background:var(--terracotta-500);
   transition:right var(--dur-base) var(--ease);
@@ -264,8 +276,51 @@ html[data-lang="th"] .reviews-score, html[data-lang="zh"] .reviews-score{ font-f
 /* ============================================================
    TURNKEY PACKAGE
    ============================================================ */
-.package{ background:var(--navy-900); color:var(--white); padding:100px 28px; }
+.package{
+  position:relative; isolation:isolate; overflow:hidden;
+  color:var(--white); padding:100px 28px 210px;
+  background:
+    radial-gradient(120% 90% at 80% 10%, rgba(226,123,84,0.10), transparent 60%),
+    linear-gradient(165deg, var(--navy-800) 0%, var(--navy-900) 45%, var(--navy-950) 100%);
+}
+/* Drafting paper: a fine grid with a heavier line every fifth square. */
+.package::before{
+  content:""; position:absolute; inset:0; z-index:0; pointer-events:none;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.055) 1px, transparent 1px),
+    linear-gradient(rgba(255,255,255,0.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.028) 1px, transparent 1px);
+  background-size:220px 220px, 220px 220px, 44px 44px, 44px 44px;
+  opacity:0.8;
+}
+
+/* Sits as a full-width elevation across the foot of the section and fades
+   upward, so it never fights the cards for attention. */
+.blueprint{
+  position:absolute; z-index:0; pointer-events:none;
+  left:0; right:0; bottom:-30px; margin:0 auto;
+  width:min(1180px, 96%);
+  overflow:hidden; /* the scaled SVG bleeds; clip it here, not on the page */
+  will-change:transform;
+}
+.blueprint-svg{ width:100%; height:auto; display:block; }
+.bp-line{
+  stroke:url(#bpFade); stroke-width:1.4;
+  stroke-dasharray:1; stroke-dashoffset:1;
+  transition:stroke-dashoffset 1.5s cubic-bezier(0.22,1,0.36,1);
+  transition-delay:calc(var(--i, 0) * 70ms);
+}
+.bp-thin{ stroke:url(#bpFadeThin); stroke-width:1; }
+.bp-accent{ stroke:url(#bpFadeAccent); stroke-width:1.6; }
+.package.is-drawn .bp-line{ stroke-dashoffset:0; }
+
+@media (prefers-reduced-motion: reduce){
+  .bp-line{ stroke-dashoffset:0; transition:none; }
+}
+
 .package-inner{
+  position:relative; z-index:1;
   max-width:var(--container); margin:0 auto;
   display:grid; grid-template-columns:0.9fr 1.1fr; gap:64px; align-items:center;
 }
@@ -292,6 +347,16 @@ html[data-lang="th"] .reviews-score, html[data-lang="zh"] .reviews-score{ font-f
    ============================================================ */
 .reno{ padding:110px 28px; max-width:var(--container); margin:0 auto; }
 .reno-grid{ display:grid; grid-template-columns:1.15fr 0.85fr; gap:64px; align-items:start; }
+.reno-list strong, .reno-list span{ overflow-wrap:anywhere; }
+
+/* Grid tracks size to min-content by default, so any column whose content
+   has a wide minimum (icon + text rows, inputs, images) keeps the grid wider
+   than a phone viewport. Opt every grid out of that. */
+.reno-grid > *, .reno-list, .reno-list li, .reno-list li > div,
+.why-grid > *, .why-list li, .why-list li > div,
+.package-inner > *, .package-grid > *,
+.bento > *, .gallery-grid > *, .process-steps > *, .price-grid > *,
+.footer-inner > *, .hero-inner > *{ min-width:0; }
 .reno h2{ margin-bottom:20px; }
 .reno-list{ margin-top:34px; display:grid; grid-template-columns:1fr 1fr; gap:22px 28px; }
 .reno-list li{ display:flex; gap:13px; align-items:flex-start; }
@@ -421,12 +486,19 @@ html[data-lang="th"] .reviews-score, html[data-lang="zh"] .reviews-score{ font-f
    CONTACT
    ============================================================ */
 .contact{ padding:110px 28px; max-width:var(--container); margin:0 auto; }
-.contact-grid{ display:grid; grid-template-columns:1.2fr 0.8fr; gap:64px; align-items:start; }
+.contact-grid{ display:grid; grid-template-columns:1.2fr 0.8fr; gap:56px; align-items:start; }
+/* Without this the form's min-content width pushes the grid past the
+   viewport between 1024px and ~1100px. */
+.contact-grid > *{ min-width:0; }
+@media (max-width:1140px){ .contact-grid{ grid-template-columns:1fr; gap:44px; } }
 
 form{ margin-top:30px; display:flex; flex-direction:column; gap:18px; }
 .form-row{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
 .form-row-3{ grid-template-columns:1fr 1fr 1fr; }
-.field{ display:flex; flex-direction:column; gap:7px; }
+/* Grid tracks refuse to shrink below an input's intrinsic width, which
+   pushed the three-column row past the viewport at 768px. */
+.field{ display:flex; flex-direction:column; gap:7px; min-width:0; }
+.field input, .field select, .field textarea{ width:100%; min-width:0; }
 .field label{ font-size:0.86rem; font-weight:500; color:var(--navy-800); }
 .req{ color:var(--terracotta-500); margin-left:2px; }
 .field input, .field select, .field textarea{
@@ -505,6 +577,11 @@ form{ margin-top:30px; display:flex; flex-direction:column; gap:18px; }
   .hero-stats{ flex-direction:row; flex-wrap:wrap; width:100%; }
   .hero-stat{ flex:1 1 240px; }
   .package-inner{ grid-template-columns:1fr; gap:44px; }
+  .package{ padding-bottom:170px; }
+  /* Scale the drawing inside its box, not the box: a wider box escapes the
+     section and adds horizontal scroll. */
+  .blueprint{ width:100%; bottom:-14px; }
+  .blueprint-svg{ width:134%; margin-left:-17%; }
   .reno-grid{ grid-template-columns:1fr; gap:44px; }
   .why-grid{ grid-template-columns:1fr; gap:40px; }
   .why-img{ aspect-ratio:16/9; }

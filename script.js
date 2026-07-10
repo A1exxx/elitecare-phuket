@@ -151,6 +151,87 @@
     revealEls.forEach(function (el) { io.observe(el); });
   }
 
+  /* ---------- blueprint: draw the elevation once it enters view ---------- */
+  var pkg = document.getElementById("package");
+  if (pkg) {
+    if (reduceMotion || !("IntersectionObserver" in window)) {
+      pkg.classList.add("is-drawn");
+    } else {
+      var bpIo = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              pkg.classList.add("is-drawn");
+              bpIo.disconnect();
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+      bpIo.observe(pkg);
+    }
+  }
+
+  /* ---------- parallax: hero photo and blueprint drift at different rates ---------- */
+  var heroBg = document.querySelector(".hero-bg");
+  var blueprint = document.querySelector(".blueprint");
+  var finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+  if (!reduceMotion && (heroBg || blueprint)) {
+    var ticking = false;
+    var pointerX = 0;
+    var pointerY = 0;
+
+    var render = function () {
+      var y = window.scrollY;
+      var hero = document.querySelector(".hero");
+      // The photo is scaled 12% so a 6% drift never exposes an edge.
+      if (heroBg && hero && y < hero.offsetHeight) {
+        heroBg.style.transform = "translate3d(0," + (y * 0.06).toFixed(1) + "px,0) scale(1.12)";
+      }
+      if (blueprint) {
+        var r = blueprint.getBoundingClientRect();
+        if (r.bottom > 0 && r.top < window.innerHeight) {
+          var progress = (window.innerHeight - r.top) / (window.innerHeight + r.height);
+          var driftY = (0.5 - progress) * 48 + pointerY * 6;
+          blueprint.style.transform =
+            "translate3d(" + (pointerX * 10).toFixed(1) + "px," + driftY.toFixed(1) + "px,0)";
+        }
+      }
+      ticking = false;
+    };
+
+    var request = function () {
+      if (!ticking) {
+        ticking = true;
+        window.requestAnimationFrame(render);
+      }
+    };
+
+    window.addEventListener("scroll", request, { passive: true });
+
+    // The drawing leans a few pixels toward the cursor: depth, not a gimmick.
+    if (finePointer && pkg && blueprint) {
+      pkg.addEventListener(
+        "mousemove",
+        function (e) {
+          var box = pkg.getBoundingClientRect();
+          pointerX = (e.clientX - box.left) / box.width - 0.5;
+          pointerY = (e.clientY - box.top) / box.height - 0.5;
+          request();
+        },
+        { passive: true }
+      );
+      pkg.addEventListener("mouseleave", function () {
+        pointerX = 0;
+        pointerY = 0;
+        request();
+      });
+    }
+
+    render();
+  }
+
   /* ---------- header shadow on scroll ---------- */
   var header = document.querySelector(".site-header");
   if (header) {

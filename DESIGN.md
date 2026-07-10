@@ -50,6 +50,14 @@ No glow, no glass. `backdrop-filter: blur(14px)` is used exactly once, on the st
 - Scroll reveal is a 22px rise + fade, staggered ≤60ms per item, driven by `IntersectionObserver` and unobserved after firing.
 - `prefers-reduced-motion: reduce` disables all of it and forces `.reveal` to its resting state.
 
+## The blueprint
+
+The turnkey-package section is drafting paper: a fine grid, a heavier line every fifth square, and a hand-authored architectural elevation of a villa (pool, palms, dimension line, the logo's sparkle) that draws itself line by line the first time the section scrolls into view. Stroke ends are staggered 70ms apart, so it reads as a hand moving across the page rather than a canned animation.
+
+It exists because the section used to be a flat navy rectangle. It stays quiet: strokes fade out toward the top via an SVG gradient rather than a CSS mask (a mask over a layer that transforms every frame forces re-rasterisation), and the whole drawing drifts a few pixels against the scroll and toward the cursor. That parallax is the only "3D" here, and it is transform-only.
+
+`prefers-reduced-motion` shows the elevation already drawn, with no drift.
+
 ## Layout
 
 - Container `1240px`. Sections alternate cream-50 / cream-100 / navy to create rhythm without dividers.
