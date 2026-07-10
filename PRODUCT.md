@@ -42,7 +42,11 @@ Claims that are true and may be used:
 - The company's own current site is Tilda-generic; the point of this build is to beat it, not match it.
 
 ## Strategic principles
-1. **The photography is documentary, not staged.** Every image is a real Elite Care employee on a real job. Never substitute stock. This is the single strongest trust signal available and it is what the anti-references cannot copy.
+1. **The photography is documentary, not staged.** Every image of *work* is a real Elite Care employee on a real job. This is the single strongest trust signal available and it is what the anti-references cannot copy.
+
+   **One deliberate exception, decided by the owner on 2026-07-10:** the hero background is a licensed stock photograph of a luxury villa (Pexels, Vero Benedini, free for commercial use), used because no photograph of a premium villa the company actually services exists yet. It is decorative and makes no claim of authorship. Replace it the moment the client supplies a real villa photo.
+
+   **The exception does not extend to before/after renovation photos.** A stock or generated before/after would be a direct false claim about work performed. Those must be the company's own images or they do not ship; until then the renovation section offers to send the portfolio on request.
 2. **Legitimacy over luxury adjectives.** "Signed quotes, tax invoices" outperforms "bespoke white-glove service." When choosing between an elegant phrase and a verifiable fact, take the fact.
 3. **Never invent social proof.** The 5.0★/23 rating is real; the review *texts* were not obtainable. Link to the Google listing rather than write plausible-sounding testimonials.
 4. **One conversion, everywhere.** Every CTA leads to the same WhatsApp thread. No competing secondary conversions (newsletter, callback form, chatbot).

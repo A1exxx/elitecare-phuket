@@ -3,14 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Phuket Elite Care — Premium Villa &amp; Property Maintenance</title>
-<meta name="description" content="Licensed villa care in Phuket: cleaning, pool, garden, AC, plumbing, electrical, renovation and full rental management. Hotel-standard protocols, 24/7, EN·RU·TH·CN.">
+<title data-i18n="meta.title">Phuket Elite Care — Premium Villa Care, Renovation &amp; Management</title>
+<meta name="description" data-i18n-attr="content:meta.description" content="Complete care for premium villas on Phuket: turnkey management from ฿17,000/month, full renovation, pool, garden, AC, in-house laundry. Licensed, 24/7, EN·RU·TH·CN.">
 <link rel="icon" href="assets/images/logo-sm.png">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://a1exxx.github.io/elitecare-phuket/">
+<meta property="og:title" data-i18n-attr="content:meta.title" content="Phuket Elite Care — Premium Villa Care, Renovation & Management">
+<meta property="og:description" data-i18n-attr="content:meta.description" content="Complete care for premium villas on Phuket.">
+<meta property="og:image" content="https://a1exxx.github.io/elitecare-phuket/assets/images/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="assets/images/photo-03-DSC03134.webp" fetchpriority="high">
-<link rel="stylesheet" href="styles.css?v=9">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Outfit:wght@300;400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/images/hero-villa.webp" fetchpriority="high">
+<link rel="stylesheet" href="styles.css?v=10">
 </head>
 <body>
 
@@ -61,6 +69,14 @@
 <path d="M14.2 16L15.4 14.8"/>
 </symbol>
 
+<symbol id="icon-laundry" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<rect x="4" y="2.6" width="16" height="18.8" rx="2.6"/>
+<circle cx="12" cy="14" r="4.6"/>
+<path d="M8.4 12.6Q10.2 11.3 12 12.6T15.6 12.6"/>
+<circle cx="7.6" cy="6" r="0.7" fill="currentColor" stroke="none"/>
+<circle cx="10.4" cy="6" r="0.7" fill="currentColor" stroke="none"/>
+</symbol>
+
 <symbol id="icon-checkup" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
 <circle cx="10" cy="10" r="6.5"/>
 <line x1="14.8" y1="14.8" x2="20.5" y2="20.5"/>
@@ -86,12 +102,6 @@
 <circle cx="12" cy="12" r="9"/>
 <ellipse cx="12" cy="12" rx="4" ry="9"/>
 <line x1="3" y1="12" x2="21" y2="12"/>
-</symbol>
-
-<symbol id="icon-timer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-<circle cx="12" cy="13" r="8"/>
-<line x1="12" y1="13" x2="12" y2="8"/>
-<line x1="10" y1="3" x2="14" y2="3"/>
 </symbol>
 
 <symbol id="icon-message" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
@@ -135,10 +145,14 @@
 <path d="M4 12.5L9.5 18L20 6"/>
 </symbol>
 
+<symbol id="icon-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+<path d="M6 9L12 15L18 9"/>
+</symbol>
+
 </defs>
 </svg>
 
-<a href="#main" class="skip-link">Skip to main content</a>
+<a href="#main" class="skip-link" data-i18n="skip.main">Skip to main content</a>
 
 <!-- ============ HEADER ============ -->
 <header class="site-header" id="top">
@@ -147,30 +161,42 @@
       <img src="assets/images/logo-sm.png" alt="Phuket Elite Care — Property Maintenance" width="172" height="57">
     </a>
     <nav class="nav-links" aria-label="Primary">
-      <a href="#services">Services</a>
-      <a href="#why-us">Why us</a>
-      <a href="#gallery">Our work</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contact">Contact</a>
+      <a href="#package" data-i18n="nav.package">Package</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#renovation" data-i18n="nav.renovation">Renovation</a>
+      <a href="#gallery" data-i18n="nav.work">Our work</a>
+      <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
+
+    <div class="lang-switch">
+      <button class="lang-btn" id="lang-btn" aria-haspopup="listbox" aria-expanded="false" data-i18n-attr="aria-label:nav.langLabel" aria-label="Change language">
+        <svg class="icon" width="17" height="17"><use href="#icon-globe"/></svg>
+        <span class="lang-current" id="lang-current">EN</span>
+        <svg class="icon lang-chevron" width="14" height="14"><use href="#icon-chevron"/></svg>
+      </button>
+      <ul class="lang-menu" id="lang-menu" role="listbox" hidden></ul>
+    </div>
+
     <a href="https://wa.me/66660748105" target="_blank" rel="noopener" class="btn btn-primary header-cta">
       <svg class="icon" width="16" height="16"><use href="#icon-message"/></svg>
-      WhatsApp us
+      <span data-i18n="nav.whatsapp">WhatsApp us</span>
     </a>
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+
+    <button class="nav-toggle" data-i18n-attr="aria-label:nav.menuOpen" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
       <svg class="icon icon-open" width="22" height="22"><use href="#icon-menu"/></svg>
       <svg class="icon icon-close" width="22" height="22"><use href="#icon-close"/></svg>
     </button>
   </div>
+
   <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
-    <a href="#services">Services</a>
-    <a href="#why-us">Why us</a>
-    <a href="#gallery">Our work</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#reviews">Reviews</a>
-    <a href="#contact">Contact</a>
-    <a href="https://wa.me/66660748105" target="_blank" rel="noopener" class="btn btn-primary">Message us on WhatsApp</a>
+    <a href="#package" data-i18n="nav.package">Package</a>
+    <a href="#services" data-i18n="nav.services">Services</a>
+    <a href="#renovation" data-i18n="nav.renovation">Renovation</a>
+    <a href="#gallery" data-i18n="nav.work">Our work</a>
+    <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+    <a href="https://wa.me/66660748105" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="nav.whatsapp">WhatsApp us</a>
   </nav>
 </header>
 
@@ -178,39 +204,42 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero">
-  <div class="hero-grid">
+  <img src="assets/images/hero-villa.webp" data-i18n-attr="alt:gal.altHero" alt="A premium villa with a lit pool at dusk" class="hero-bg" fetchpriority="high" decoding="async">
+  <div class="hero-scrim"></div>
+  <div class="hero-inner">
     <div class="hero-content">
-      <p class="eyebrow">Property maintenance · Cherngtalay, Phuket</p>
-      <h1>Villa care run to <em>hotel standards</em>, not marketplace guesswork.</h1>
-      <p class="hero-lead">Cleaning, pool, garden, AC, plumbing, electrical, renovation and full rental management — handled by our own licensed engineers, not a directory of freelancers. Written quotes, real invoices, one team accountable for the whole villa.</p>
+      <p class="eyebrow eyebrow-light" data-i18n="hero.eyebrow">Property maintenance · Cherngtalay, Phuket</p>
+      <h1>
+        <span data-i18n="hero.h1a">Complete care for</span>
+        <em data-i18n="hero.h1em">premium villas</em>
+        <span data-i18n="hero.h1b">on Phuket.</span>
+      </h1>
+      <p class="hero-lead" data-i18n="hero.lead">One licensed team for everything a villa needs — from a weekly pool check to a full refurbishment. Our own engineers, written quotes, real invoices.</p>
       <div class="hero-actions">
         <a href="#contact" class="btn btn-primary btn-lg">
           <svg class="icon" width="18" height="18"><use href="#icon-message"/></svg>
-          Get a free quote
+          <span data-i18n="hero.cta1">Get a free quote</span>
         </a>
-        <a href="#services" class="btn btn-ghost btn-lg">
-          Explore services
+        <a href="#package" class="btn btn-glass btn-lg">
+          <span data-i18n="hero.cta2">See the turnkey package</span>
           <svg class="icon" width="16" height="16"><use href="#icon-arrow"/></svg>
         </a>
       </div>
-      <div class="hero-meta">
-        <div class="hero-meta-item">
-          <svg class="icon" width="18" height="18"><use href="#icon-star"/></svg>
-          <span><strong>5.0</strong> on Google · 23 reviews</span>
-        </div>
-        <div class="hero-meta-item">
-          <svg class="icon" width="18" height="18"><use href="#icon-globe"/></svg>
-          <span>EN · RU · TH · CN</span>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <svg class="icon" width="20" height="20"><use href="#icon-management"/></svg>
+        <div>
+          <strong data-i18n="hero.stat1">Turnkey management</strong>
+          <span data-i18n="hero.stat1sub">from ฿17,000 / month</span>
         </div>
       </div>
-    </div>
-    <div class="hero-visual">
-      <img src="assets/images/photo-03-DSC03134.webp" alt="Phuket Elite Care team cleaning the outdoor terrace of a modern Phuket villa" class="hero-img" fetchpriority="high" decoding="async">
-      <div class="hero-card">
-        <svg class="icon" width="20" height="20"><use href="#icon-timer"/></svg>
+      <div class="hero-stat">
+        <svg class="icon" width="20" height="20"><use href="#icon-star"/></svg>
         <div>
-          <strong>1-hour</strong>
-          <span>emergency inspection</span>
+          <strong data-i18n="hero.stat2">5.0 on Google</strong>
+          <span data-i18n="hero.stat2sub">23 verified reviews</span>
         </div>
       </div>
     </div>
@@ -222,90 +251,200 @@
   <div class="trust-bar-inner">
     <div class="trust-item reveal">
       <svg class="icon" width="22" height="22"><use href="#icon-shield"/></svg>
-      <span>Licensed &amp; insured</span>
+      <span data-i18n="trust.licensed">Licensed &amp; insured</span>
     </div>
     <div class="trust-item reveal">
       <svg class="icon" width="22" height="22"><use href="#icon-clock"/></svg>
-      <span>24/7 availability</span>
+      <span data-i18n="trust.hours">24/7 availability</span>
     </div>
     <div class="trust-item reveal">
       <svg class="icon" width="22" height="22"><use href="#icon-sparkle"/></svg>
-      <span>10+ years on the island</span>
+      <span data-i18n="trust.years">10+ years on the island</span>
     </div>
     <div class="trust-item reveal">
       <svg class="icon" width="22" height="22"><use href="#icon-star"/></svg>
-      <span>5.0★ · 23 Google reviews</span>
+      <span data-i18n="trust.reviews">5.0★ · 23 Google reviews</span>
     </div>
     <div class="trust-item reveal">
       <svg class="icon" width="22" height="22"><use href="#icon-globe"/></svg>
-      <span>EN · RU · TH · CN team</span>
+      <span data-i18n="trust.langs">EN · RU · TH · CN team</span>
     </div>
+  </div>
+</section>
+
+<!-- ============ TURNKEY PACKAGE ============ -->
+<section class="package" id="package">
+  <div class="package-inner">
+    <div class="package-head reveal">
+      <p class="eyebrow eyebrow-light" data-i18n="pkg.eyebrow">Turnkey villa management</p>
+      <h2 data-i18n="pkg.h2">21 services in one package</h2>
+      <p class="package-lead" data-i18n="pkg.lead">One contract, one team, one invoice.</p>
+      <div class="package-price">
+        <strong data-i18n="pkg.price">from ฿17,000</strong>
+        <span data-i18n="pkg.priceUnit">per month</span>
+      </div>
+      <a href="https://wa.me/66660748105" target="_blank" rel="noopener" class="btn btn-primary btn-lg" id="pkg-cta">
+        <svg class="icon" width="18" height="18"><use href="#icon-message"/></svg>
+        <span data-i18n="pkg.cta">Request the full scope</span>
+      </a>
+    </div>
+
+    <ul class="package-grid">
+      <li class="package-item reveal">
+        <svg class="icon" width="24" height="24"><use href="#icon-pool"/></svg>
+        <strong data-i18n="pkg.item1">Pool care</strong>
+        <span data-i18n="pkg.item1sub">twice a week</span>
+      </li>
+      <li class="package-item reveal">
+        <svg class="icon" width="24" height="24"><use href="#icon-sparkle"/></svg>
+        <strong data-i18n="pkg.item2">General cleaning</strong>
+        <span data-i18n="pkg.item2sub">four times a month</span>
+      </li>
+      <li class="package-item reveal">
+        <svg class="icon" width="24" height="24"><use href="#icon-garden"/></svg>
+        <strong data-i18n="pkg.item3">Garden maintenance</strong>
+        <span data-i18n="pkg.item3sub">once a week</span>
+      </li>
+      <li class="package-item reveal">
+        <svg class="icon" width="24" height="24"><use href="#icon-checkup"/></svg>
+        <strong data-i18n="pkg.item4">Technical inspection</strong>
+        <span data-i18n="pkg.item4sub">twice a month</span>
+      </li>
+    </ul>
+    <p class="package-note reveal" data-i18n="pkg.note">Scope and final price are confirmed after a free on-site assessment. Excludes 7% VAT.</p>
+  </div>
+</section>
+
+<!-- ============ RENOVATION SPOTLIGHT ============ -->
+<section class="reno" id="renovation">
+  <div class="reno-grid">
+    <div class="reno-content reveal">
+      <p class="eyebrow" data-i18n="reno.eyebrow">Renovation &amp; major works</p>
+      <h2>
+        <span data-i18n="reno.h2a">We don't only keep villas clean.</span>
+        <em data-i18n="reno.h2em">We rebuild them.</em>
+      </h2>
+      <p class="section-lead" data-i18n="reno.lead">Heavy construction is done by our own crews, not a chain of subcontractors.</p>
+
+      <ul class="reno-list">
+        <li>
+          <svg class="icon" width="20" height="20"><use href="#icon-renovation"/></svg>
+          <div>
+            <strong data-i18n="reno.b1">Full villa refurbishment</strong>
+            <span data-i18n="reno.b1sub">Structural work, layout changes, finishing</span>
+          </div>
+        </li>
+        <li>
+          <svg class="icon" width="20" height="20"><use href="#icon-plumbing"/></svg>
+          <div>
+            <strong data-i18n="reno.b2">Kitchens &amp; bathrooms</strong>
+            <span data-i18n="reno.b2sub">Tiling, plumbing, cabinetry, fixtures</span>
+          </div>
+        </li>
+        <li>
+          <svg class="icon" width="20" height="20"><use href="#icon-pool"/></svg>
+          <div>
+            <strong data-i18n="reno.b3">Surfaces &amp; exteriors</strong>
+            <span data-i18n="reno.b3sub">Painting, roofing, terraces, pool resurfacing</span>
+          </div>
+        </li>
+        <li>
+          <svg class="icon" width="20" height="20"><use href="#icon-electrical"/></svg>
+          <div>
+            <strong data-i18n="reno.b4">Systems rewired</strong>
+            <span data-i18n="reno.b4sub">Electrical, water, air conditioning</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <aside class="reno-portfolio reveal">
+      <div class="reno-portfolio-mark">
+        <svg class="icon" width="26" height="26"><use href="#icon-camera"/></svg>
+      </div>
+      <h3 data-i18n="reno.portfolioTitle">Before / after photos of completed projects</h3>
+      <p data-i18n="reno.portfolioText">We send the renovation portfolio on request, matched to the kind of work your villa needs.</p>
+      <a href="https://wa.me/66660748105" target="_blank" rel="noopener" class="btn btn-primary" id="reno-cta">
+        <svg class="icon" width="17" height="17"><use href="#icon-message"/></svg>
+        <span data-i18n="reno.cta">Ask for the renovation portfolio</span>
+      </a>
+    </aside>
   </div>
 </section>
 
 <!-- ============ SERVICES ============ -->
 <section class="services" id="services">
   <div class="section-head reveal">
-    <p class="eyebrow">What we do</p>
-    <h2>Nine services, one accountable team</h2>
-    <p class="section-lead">Every job is carried out by our own in-house engineers and comes with a written scope before we start — no subcontractor roulette.</p>
+    <p class="eyebrow" data-i18n="svc.eyebrow">What we do</p>
+    <h2 data-i18n="svc.h2">Ten services, one accountable team</h2>
+    <p class="section-lead" data-i18n="svc.lead">Every job is carried out by our own in-house crews.</p>
   </div>
 
   <div class="bento">
-    <article class="bento-card bento-lg reveal">
+    <article class="bento-card reveal">
       <div class="bento-icon"><svg class="icon" width="26" height="26"><use href="#icon-management"/></svg></div>
-      <h3>Rental &amp; Property Management</h3>
-      <p>Full service from cleaning to guest check-in — we run the villa while you're away: turnovers, maintenance, supplier coordination, owner reporting.</p>
-      <span class="bento-tag">Flagship service</span>
+      <h3 data-i18n="svc.mgmt">Rental &amp; Property Management</h3>
+      <p data-i18n="svc.mgmtText">Full service from cleaning to guest check-in.</p>
+      <span class="bento-tag" data-i18n="svc.mgmtTag">Flagship service</span>
+    </article>
+
+    <article class="bento-card reveal">
+      <div class="bento-icon"><svg class="icon" width="26" height="26"><use href="#icon-renovation"/></svg></div>
+      <h3 data-i18n="svc.reno">Renovation &amp; Major Repair</h3>
+      <p data-i18n="svc.renoText">Our own construction crews.</p>
+      <span class="bento-tag" data-i18n="svc.renoTag">Heavy works</span>
     </article>
 
     <article class="bento-card reveal">
       <div class="bento-icon"><svg class="icon" width="24" height="24"><use href="#icon-sparkle"/></svg></div>
-      <h3>Villa &amp; Property Cleaning</h3>
-      <p>Regular, deep, move-in/move-out and post-construction cleaning, tailored to villa or condo.</p>
+      <h3 data-i18n="svc.clean">Villa &amp; Property Cleaning</h3>
+      <p data-i18n="svc.cleanText">Regular, deep, move-in/move-out and post-construction cleaning.</p>
     </article>
 
     <article class="bento-card reveal">
       <div class="bento-icon"><svg class="icon" width="24" height="24"><use href="#icon-pool"/></svg></div>
-      <h3>Pool Maintenance</h3>
-      <p>Chemical balance, filtration, tiling and equipment checks on a fixed weekly schedule.</p>
+      <h3 data-i18n="svc.pool">Pool Maintenance</h3>
+      <p data-i18n="svc.poolText">Chemical balance, filtration and equipment checks.</p>
     </article>
 
     <article class="bento-card reveal">
       <div class="bento-icon"><svg class="icon" width="24" height="24"><use href="#icon-garden"/></svg></div>
-      <h3>Garden &amp; Landscaping</h3>
-      <p>Tropical garden upkeep, irrigation, trimming and seasonal planting.</p>
+      <h3 data-i18n="svc.garden">Garden &amp; Landscaping</h3>
+      <p data-i18n="svc.gardenText">Tropical garden upkeep, irrigation and trimming.</p>
     </article>
 
     <article class="bento-card reveal">
       <div class="bento-icon"><svg class="icon" width="24" height="24"><use href="#icon-ac"/></svg></div>
-      <h3>AC Service &amp; Installation</h3>
-      <p>Daikin and Carrier inverter systems — supply, install, service and repair.</p>
+      <h3 data-i18n="svc.ac">AC Service &amp; Installation</h3>
+      <p data-i18n="svc.acText">Daikin and Carrier inverter systems.</p>
     </article>
 
     <article class="bento-card reveal">
       <div class="bento-icon"><svg class="icon" width="24" height="24"><use href="#icon-plumbing"/></svg></div>
-      <h3>Plumbing</h3>
-      <p>Leak repair, fixture installation and water system troubleshooting.</p>
+      <h3 data-i18n="svc.plumb">Plumbing</h3>
+      <p data-i18n="svc.plumbText">Leak repair, fixture installation and troubleshooting.</p>
     </article>
 
     <article class="bento-card reveal">
       <div class="bento-icon"><svg class="icon" width="24" height="24"><use href="#icon-electrical"/></svg></div>
-      <h3>Electrical</h3>
-      <p>Wiring, fixture installation and safety inspections by qualified electricians.</p>
-    </article>
-
-    <article class="bento-card bento-lg reveal">
-      <div class="bento-icon"><svg class="icon" width="26" height="26"><use href="#icon-checkup"/></svg></div>
-      <h3>Villa Technical Check-up</h3>
-      <p>A full inspection of AC, pool, plumbing and electrical, plus a complimentary clean and a QR-service code installed in the villa so you can call us in one scan. From <strong>฿5,900</strong>.</p>
-      <span class="bento-tag">Popular hook offer</span>
+      <h3 data-i18n="svc.elec">Electrical</h3>
+      <p data-i18n="svc.elecText">Wiring, fixture installation and safety inspections.</p>
     </article>
 
     <article class="bento-card reveal">
-      <div class="bento-icon"><svg class="icon" width="24" height="24"><use href="#icon-renovation"/></svg></div>
-      <h3>Renovation &amp; Repair</h3>
-      <p>General contracting and refurbishment, from a single room to a full villa refresh.</p>
+      <div class="bento-icon"><svg class="icon" width="24" height="24"><use href="#icon-laundry"/></svg></div>
+      <h3 data-i18n="svc.laundry">In-house Laundry</h3>
+      <p data-i18n="svc.laundryText">Our own laundry facility handles villa linen and towels.</p>
+    </article>
+
+    <article class="bento-card bento-wide reveal">
+      <div class="bento-icon"><svg class="icon" width="26" height="26"><use href="#icon-checkup"/></svg></div>
+      <h3 data-i18n="svc.checkup">Villa Technical Check-up</h3>
+      <p>
+        <span data-i18n="svc.checkupText">A full inspection of AC, pool, plumbing and electrical.</span>
+        <strong data-i18n="svc.checkupPrice">From ฿5,900.</strong>
+      </p>
+      <span class="bento-tag" data-i18n="svc.checkupTag">Popular first step</span>
     </article>
   </div>
 </section>
@@ -314,34 +453,34 @@
 <section class="why-us" id="why-us">
   <div class="why-grid">
     <div class="why-visual reveal">
-      <img src="assets/images/photo-05.webp" alt="The Phuket Elite Care team" class="why-img">
+      <img src="assets/images/photo-05.webp" data-i18n-attr="alt:gal.altTeam" alt="The Phuket Elite Care team" class="why-img" loading="lazy">
     </div>
     <div class="why-content reveal">
-      <p class="eyebrow">Why owners choose us</p>
-      <h2>We're a registered company, not a name in a Telegram group.</h2>
+      <p class="eyebrow" data-i18n="why.eyebrow">Why owners choose us</p>
+      <h2 data-i18n="why.h2">A registered company, not a name in a Telegram group.</h2>
       <ul class="why-list">
         <li>
           <svg class="icon" width="20" height="20"><use href="#icon-check"/></svg>
-          <div><strong>Our own engineers.</strong> No marketplace of rotating freelancers — the same trained team returns to your villa every time.</div>
+          <div><strong data-i18n="why.p1">Our own crews.</strong> <span data-i18n="why.p1text">The same trained team returns to your villa every time.</span></div>
         </li>
         <li>
           <svg class="icon" width="20" height="20"><use href="#icon-check"/></svg>
-          <div><strong>Paperwork that holds up.</strong> Signed quotes, tax invoices and receipts for every job — useful if you ever need to prove maintenance history.</div>
+          <div><strong data-i18n="why.p2">Paperwork that holds up.</strong> <span data-i18n="why.p2text">Signed quotes, tax invoices and receipts for every job.</span></div>
         </li>
         <li>
           <svg class="icon" width="20" height="20"><use href="#icon-check"/></svg>
-          <div><strong>Hotel-standard protocols.</strong> The same checklists and QC used by luxury resorts, applied to private villas.</div>
+          <div><strong data-i18n="why.p3">Hotel-standard protocols.</strong> <span data-i18n="why.p3text">The same checklists used by luxury resorts.</span></div>
         </li>
         <li>
           <svg class="icon" width="20" height="20"><use href="#icon-check"/></svg>
-          <div><strong>Based in Cherngtalay.</strong> Minutes from Bang Tao, Laguna and the west coast — fast response, no cross-island delays.</div>
+          <div><strong data-i18n="why.p4">Based in Cherngtalay.</strong> <span data-i18n="why.p4text">Minutes from Bang Tao and Laguna.</span></div>
         </li>
         <li>
           <svg class="icon" width="20" height="20"><use href="#icon-check"/></svg>
-          <div><strong>Talk to us in your language.</strong> Our team handles English, Russian, Thai and Chinese daily.</div>
+          <div><strong data-i18n="why.p5">Talk to us in your language.</strong> <span data-i18n="why.p5text">English, Russian, Thai and Chinese.</span></div>
         </li>
       </ul>
-      <a href="#contact" class="btn btn-primary">Talk to the team</a>
+      <a href="#contact" class="btn btn-primary" data-i18n="why.cta">Talk to the team</a>
     </div>
   </div>
 </section>
@@ -349,46 +488,46 @@
 <!-- ============ GALLERY ============ -->
 <section class="gallery" id="gallery">
   <div class="section-head reveal">
-    <p class="eyebrow">On site</p>
-    <h2>Real jobs, real villas</h2>
-    <p class="section-lead">Straight from our field team — no stock photography.</p>
+    <p class="eyebrow" data-i18n="gal.eyebrow">On site</p>
+    <h2 data-i18n="gal.h2">Real jobs, real villas</h2>
+    <p class="section-lead" data-i18n="gal.lead">Straight from our field team — no stock photography.</p>
   </div>
   <div class="gallery-grid">
-    <figure class="gallery-item span-2 reveal"><img src="assets/images/photo-02-DSC03206.webp" alt="Technician deep-cleaning a villa interior with a Kärcher extractor" loading="lazy"></figure>
-    <figure class="gallery-item reveal"><img src="assets/images/photo-04.webp" alt="Pressure-washing a villa driveway" loading="lazy"></figure>
-    <figure class="gallery-item reveal"><img src="assets/images/photo-06.webp" alt="Steam-cleaning curtains on site" loading="lazy"></figure>
-    <figure class="gallery-item reveal"><img src="assets/images/photo-01-DSC03140.webp" alt="Technical crew servicing a villa water tank" loading="lazy"></figure>
-    <figure class="gallery-item span-2 reveal"><img src="assets/images/photo-08-whatsapp.webp" alt="Phuket Elite Care branded service vehicle at a client villa" loading="lazy"></figure>
-    <figure class="gallery-item reveal"><img src="assets/images/photo-07.webp" alt="The Service 24/7 QR plaque installed inside a client villa" loading="lazy"></figure>
+    <figure class="gallery-item span-2 reveal"><img src="assets/images/photo-02-DSC03206.webp" data-i18n-attr="alt:gal.alt1" alt="Technician deep-cleaning a villa interior with a Kärcher extractor" loading="lazy"></figure>
+    <figure class="gallery-item reveal"><img src="assets/images/photo-04.webp" data-i18n-attr="alt:gal.alt2" alt="Pressure-washing a villa driveway" loading="lazy"></figure>
+    <figure class="gallery-item reveal"><img src="assets/images/photo-06.webp" data-i18n-attr="alt:gal.alt3" alt="Steam-cleaning curtains on site" loading="lazy"></figure>
+    <figure class="gallery-item reveal"><img src="assets/images/photo-01-DSC03140.webp" data-i18n-attr="alt:gal.alt4" alt="Technical crew servicing a villa water tank" loading="lazy"></figure>
+    <figure class="gallery-item span-2 reveal"><img src="assets/images/photo-08-whatsapp.webp" data-i18n-attr="alt:gal.alt5" alt="Phuket Elite Care branded service vehicle at a client villa" loading="lazy"></figure>
+    <figure class="gallery-item reveal"><img src="assets/images/photo-07.webp" data-i18n-attr="alt:gal.alt6" alt="The Service 24/7 QR plaque installed inside a client villa" loading="lazy"></figure>
   </div>
 </section>
 
 <!-- ============ PROCESS ============ -->
 <section class="process" id="process">
   <div class="section-head reveal">
-    <p class="eyebrow">How it works</p>
-    <h2>From message to finished job</h2>
+    <p class="eyebrow" data-i18n="proc.eyebrow">How it works</p>
+    <h2 data-i18n="proc.h2">From message to finished job</h2>
   </div>
   <ol class="process-steps">
     <li class="reveal">
       <span class="step-no">01</span>
-      <h3>Tell us what you need</h3>
-      <p>Pick a service and tell us whether it's a villa, townhouse or condo.</p>
+      <h3 data-i18n="proc.s1">Tell us what you need</h3>
+      <p data-i18n="proc.s1text">Pick a service and tell us whether it's a villa, townhouse or condo.</p>
     </li>
     <li class="reveal">
       <span class="step-no">02</span>
-      <h3>Share a few details</h3>
-      <p>Bedrooms, bathrooms, approximate size in m² and your location pin.</p>
+      <h3 data-i18n="proc.s2">Share a few details</h3>
+      <p data-i18n="proc.s2text">Bedrooms, bathrooms, approximate size and your location.</p>
     </li>
     <li class="reveal">
       <span class="step-no">03</span>
-      <h3>We schedule a free visit</h3>
-      <p>Our team inspects on site at a time that suits you — no obligation.</p>
+      <h3 data-i18n="proc.s3">We schedule a free visit</h3>
+      <p data-i18n="proc.s3text">Our team inspects on site at a time that suits you.</p>
     </li>
     <li class="reveal">
       <span class="step-no">04</span>
-      <h3>Fixed quote, then we start</h3>
-      <p>Clear pricing before any work begins, VAT stated upfront — no surprises on the invoice.</p>
+      <h3 data-i18n="proc.s4">Fixed quote, then we start</h3>
+      <p data-i18n="proc.s4text">Clear pricing before any work begins.</p>
     </li>
   </ol>
 </section>
@@ -396,22 +535,25 @@
 <!-- ============ PRICING ============ -->
 <section class="pricing" id="pricing">
   <div class="section-head reveal">
-    <p class="eyebrow">Indicative pricing</p>
-    <h2>Transparent starting points</h2>
-    <p class="section-lead">Real numbers from our current rate card. Every villa is different, so the exact quote is always confirmed after a free assessment.</p>
+    <p class="eyebrow" data-i18n="price.eyebrow">Indicative pricing</p>
+    <h2 data-i18n="price.h2">Transparent starting points</h2>
+    <p class="section-lead" data-i18n="price.lead">Real numbers from our current rate card.</p>
   </div>
 
   <div class="price-grid">
-    <div class="price-card reveal"><span>Fresh clean</span><strong>฿500</strong></div>
-    <div class="price-card reveal"><span>General clean</span><strong>฿1,100</strong></div>
-    <div class="price-card reveal"><span>Deep clean</span><strong>฿3,500</strong></div>
-    <div class="price-card reveal"><span>Move-out clean</span><strong>฿1,500</strong></div>
-    <div class="price-card reveal"><span>Glass &amp; window clean</span><strong>฿3,000</strong></div>
-    <div class="price-card reveal"><span>Deep scrubbing</span><strong>฿7,500</strong></div>
-    <div class="price-card reveal"><span>AC install, 24,000 BTU inverter</span><strong>from ฿37,050</strong></div>
-    <div class="price-card price-card-accent reveal"><span>Villa Technical Check-up</span><strong>฿5,900</strong></div>
+    <div class="price-card reveal"><span data-i18n="price.p1">Fresh clean</span><strong>฿500</strong></div>
+    <div class="price-card reveal"><span data-i18n="price.p2">General clean</span><strong>฿1,100</strong></div>
+    <div class="price-card reveal"><span data-i18n="price.p3">Deep clean</span><strong>฿3,500</strong></div>
+    <div class="price-card reveal"><span data-i18n="price.p4">Move-out clean</span><strong>฿1,500</strong></div>
+    <div class="price-card reveal"><span data-i18n="price.p5">Glass &amp; window clean</span><strong>฿3,000</strong></div>
+    <div class="price-card reveal"><span data-i18n="price.p6">Deep scrubbing</span><strong>฿7,500</strong></div>
+    <div class="price-card reveal"><span data-i18n="price.p7">AC install, 24,000 BTU inverter</span><strong><span data-i18n="price.from">from</span> ฿37,050</strong></div>
+    <div class="price-card price-card-accent reveal">
+      <span data-i18n="price.p8">Turnkey villa management</span>
+      <strong><span data-i18n="price.from">from</span> ฿17,000 <small data-i18n="price.p8unit">/ month</small></strong>
+    </div>
   </div>
-  <p class="price-disclaimer reveal">Indicative pricing per standard job. Excludes 7% VAT. Final quote confirmed after a free on-site assessment.</p>
+  <p class="price-disclaimer reveal" data-i18n="price.disclaimer">Indicative pricing per standard job. Excludes 7% VAT.</p>
 </section>
 
 <!-- ============ REVIEWS ============ -->
@@ -425,14 +567,14 @@
         <svg class="icon" width="22" height="22"><use href="#icon-star"/></svg>
         <svg class="icon" width="22" height="22"><use href="#icon-star"/></svg>
       </div>
-      <p class="reviews-score">5.0 out of 5</p>
-      <p class="reviews-count">Based on 23 verified reviews on Google</p>
+      <p class="reviews-score" data-i18n="rev.score">5.0 out of 5</p>
+      <p class="reviews-count" data-i18n="rev.count">Based on 23 verified reviews on Google</p>
       <a href="https://maps.app.goo.gl/JwiWWraCebza6fqK9" target="_blank" rel="noopener" class="btn btn-ghost">
-        Read reviews on Google Maps
+        <span data-i18n="rev.cta">Read reviews on Google Maps</span>
         <svg class="icon" width="16" height="16"><use href="#icon-arrow"/></svg>
       </a>
     </div>
-    <p class="reviews-note">We'd rather show you the real listing than write quotes for you — see what owners in Bang Tao and Laguna actually say.</p>
+    <p class="reviews-note" data-i18n="rev.note">We'd rather show you the real listing than write quotes for you.</p>
   </div>
 </section>
 
@@ -440,86 +582,87 @@
 <section class="contact" id="contact">
   <div class="contact-grid">
     <div class="contact-form-wrap reveal">
-      <p class="eyebrow">Get a quote</p>
-      <h2>Tell us about your property</h2>
-      <p class="section-lead">Fill this in and it opens a pre-filled WhatsApp message to our team — the same details our office asks for.</p>
+      <p class="eyebrow" data-i18n="form.eyebrow">Get a quote</p>
+      <h2 data-i18n="form.h2">Tell us about your property</h2>
+      <p class="section-lead" data-i18n="form.lead">Fill this in and it opens a pre-filled WhatsApp message to our team.</p>
 
       <form id="lead-form" novalidate>
         <div class="form-row">
           <div class="field">
-            <label for="service">Service</label>
+            <label for="service" data-i18n="form.service">Service</label>
             <select id="service" name="service" required>
-              <option value="" disabled selected>Select a service</option>
-              <option>Villa &amp; Property Cleaning</option>
-              <option>Pool Maintenance</option>
-              <option>Garden &amp; Landscaping</option>
-              <option>AC Service &amp; Installation</option>
-              <option>Plumbing</option>
-              <option>Electrical</option>
-              <option>Renovation &amp; Repair</option>
-              <option>Rental &amp; Property Management</option>
-              <option>Villa Technical Check-up</option>
-              <option>Something else</option>
+              <option value="" disabled selected data-i18n="form.servicePick">Select a service</option>
+              <option data-i18n="svc.mgmt">Rental &amp; Property Management</option>
+              <option data-i18n="svc.reno">Renovation &amp; Major Repair</option>
+              <option data-i18n="svc.clean">Villa &amp; Property Cleaning</option>
+              <option data-i18n="svc.pool">Pool Maintenance</option>
+              <option data-i18n="svc.garden">Garden &amp; Landscaping</option>
+              <option data-i18n="svc.ac">AC Service &amp; Installation</option>
+              <option data-i18n="svc.plumb">Plumbing</option>
+              <option data-i18n="svc.elec">Electrical</option>
+              <option data-i18n="svc.laundry">In-house Laundry</option>
+              <option data-i18n="svc.checkup">Villa Technical Check-up</option>
+              <option data-i18n="form.svcOther">Something else</option>
             </select>
           </div>
           <div class="field">
-            <label for="property-type">Property type</label>
+            <label for="property-type" data-i18n="form.propType">Property type</label>
             <select id="property-type" name="propertyType" required>
-              <option value="" disabled selected>Select type</option>
-              <option>Villa</option>
-              <option>Townhouse</option>
-              <option>Condo</option>
+              <option value="" disabled selected data-i18n="form.propPick">Select type</option>
+              <option data-i18n="form.villa">Villa</option>
+              <option data-i18n="form.townhouse">Townhouse</option>
+              <option data-i18n="form.condo">Condo</option>
             </select>
           </div>
         </div>
 
         <div class="form-row form-row-3">
           <div class="field">
-            <label for="bedrooms">Bedrooms</label>
+            <label for="bedrooms" data-i18n="form.bedrooms">Bedrooms</label>
             <input type="number" id="bedrooms" name="bedrooms" min="0" placeholder="3">
           </div>
           <div class="field">
-            <label for="bathrooms">Bathrooms</label>
+            <label for="bathrooms" data-i18n="form.bathrooms">Bathrooms</label>
             <input type="number" id="bathrooms" name="bathrooms" min="0" placeholder="2">
           </div>
           <div class="field">
-            <label for="size">Size, m²</label>
+            <label for="size" data-i18n="form.size">Size, m²</label>
             <input type="number" id="size" name="size" min="0" placeholder="220">
           </div>
         </div>
 
         <div class="form-row">
           <div class="field">
-            <label for="location">Location in Phuket</label>
-            <input type="text" id="location" name="location" placeholder="e.g. Bang Tao, Laguna">
+            <label for="location" data-i18n="form.location">Location in Phuket</label>
+            <input type="text" id="location" name="location" data-i18n-attr="placeholder:form.locationPh" placeholder="e.g. Bang Tao, Laguna">
           </div>
           <div class="field">
-            <label for="visit-time">Preferred visit time</label>
-            <input type="text" id="visit-time" name="visitTime" placeholder="e.g. Tomorrow afternoon">
+            <label for="visit-time" data-i18n="form.visit">Preferred visit time</label>
+            <input type="text" id="visit-time" name="visitTime" data-i18n-attr="placeholder:form.visitPh" placeholder="e.g. Tomorrow afternoon">
           </div>
         </div>
 
         <div class="form-row">
           <div class="field">
-            <label for="name">Your name<span class="req">*</span></label>
+            <label for="name"><span data-i18n="form.name">Your name</span><span class="req">*</span></label>
             <input type="text" id="name" name="name" required autocomplete="name">
           </div>
           <div class="field">
-            <label for="phone">WhatsApp / phone<span class="req">*</span></label>
+            <label for="phone"><span data-i18n="form.phone">WhatsApp / phone</span><span class="req">*</span></label>
             <input type="tel" id="phone" name="phone" required autocomplete="tel">
           </div>
         </div>
 
         <div class="field">
-          <label for="message">Anything else we should know</label>
-          <textarea id="message" name="message" rows="3" placeholder="Optional"></textarea>
+          <label for="message" data-i18n="form.message">Anything else we should know</label>
+          <textarea id="message" name="message" rows="3" data-i18n-attr="placeholder:form.messagePh" placeholder="Optional"></textarea>
         </div>
 
         <button type="submit" class="btn btn-primary btn-lg btn-block">
           <svg class="icon" width="18" height="18"><use href="#icon-message"/></svg>
-          Send via WhatsApp
+          <span data-i18n="form.submit">Send via WhatsApp</span>
         </button>
-        <p class="form-hint">Opens WhatsApp with your details pre-filled — nothing is sent until you press send there.</p>
+        <p class="form-hint" data-i18n="form.hint">Opens WhatsApp with your details pre-filled.</p>
       </form>
     </div>
 
@@ -529,8 +672,8 @@
           <svg class="icon" width="22" height="22"><use href="#icon-pin"/></svg>
         </span>
         <span class="map-card-body">
-          <strong>Cherngtalay, Thalang</strong>
-          <span>Minutes from Bang Tao &amp; Laguna</span>
+          <strong data-i18n="contact.mapTitle">Cherngtalay, Thalang</strong>
+          <span data-i18n="contact.mapSub">Minutes from Bang Tao &amp; Laguna</span>
         </span>
         <svg class="icon map-card-arrow" width="18" height="18"><use href="#icon-arrow"/></svg>
       </a>
@@ -538,22 +681,22 @@
         <div class="info-row">
           <svg class="icon" width="20" height="20"><use href="#icon-pin"/></svg>
           <div>
-            <strong>248/6 Moo 3 Srisoonthorn Road</strong>
-            <span>Cherngtalay, Thalang, Phuket 83110</span>
+            <strong data-i18n="contact.addr">248/6 Moo 3 Srisoonthorn Road</strong>
+            <span data-i18n="contact.addrSub">Cherngtalay, Thalang, Phuket 83110</span>
           </div>
         </div>
         <div class="info-row">
           <svg class="icon" width="20" height="20"><use href="#icon-phone"/></svg>
           <div>
             <strong>+66 66 074 8105</strong>
-            <span>WhatsApp &amp; Telegram, 24/7</span>
+            <span data-i18n="contact.phoneSub">WhatsApp &amp; Telegram, 24/7</span>
           </div>
         </div>
         <div class="info-row">
           <svg class="icon" width="20" height="20"><use href="#icon-clock"/></svg>
           <div>
-            <strong>Office hours 09:00–18:00</strong>
-            <span>Emergency call-outs anytime</span>
+            <strong data-i18n="contact.hours">Office hours 09:00–18:00</strong>
+            <span data-i18n="contact.hoursSub">Emergency call-outs anytime</span>
           </div>
         </div>
         <div class="info-socials">
@@ -572,8 +715,8 @@
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <img src="assets/images/logo-sm.png" alt="Phuket Elite Care" width="150" height="50">
-      <p>Premium service for luxury real estate. Hotel-standard villa care across west-coast Phuket.</p>
+      <img src="assets/images/logo-sm.png" alt="Phuket Elite Care" width="150" height="50" loading="lazy">
+      <p data-i18n="foot.tagline">Premium service for luxury real estate.</p>
       <div class="info-socials">
         <a href="https://wa.me/66660748105" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon" width="18" height="18"><use href="#icon-message"/></svg></a>
         <a href="https://t.me/elitecare_phuket" target="_blank" rel="noopener" aria-label="Telegram"><svg class="icon" width="18" height="18"><use href="#icon-send"/></svg></a>
@@ -581,26 +724,27 @@
       </div>
     </div>
     <div class="footer-col">
-      <h3>Site</h3>
-      <a href="#services">Services</a>
-      <a href="#why-us">Why us</a>
-      <a href="#gallery">Our work</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#reviews">Reviews</a>
+      <h3 data-i18n="foot.site">Site</h3>
+      <a href="#package" data-i18n="nav.package">Package</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#renovation" data-i18n="nav.renovation">Renovation</a>
+      <a href="#gallery" data-i18n="nav.work">Our work</a>
+      <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
     </div>
     <div class="footer-col">
-      <h3>Contact</h3>
+      <h3 data-i18n="foot.contact">Contact</h3>
       <a href="https://wa.me/66660748105" target="_blank" rel="noopener">+66 66 074 8105</a>
-      <a href="https://maps.app.goo.gl/JwiWWraCebza6fqK9" target="_blank" rel="noopener">Cherngtalay, Phuket</a>
+      <a href="https://maps.app.goo.gl/JwiWWraCebza6fqK9" target="_blank" rel="noopener" data-i18n="contact.mapTitle">Cherngtalay, Phuket</a>
       <span>EN · RU · TH · CN</span>
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2026 Phuket Elite Care Property Maintenance Co., Ltd.</span>
-    <span>Concept preview — not the live site</span>
+    <span data-i18n="foot.rights">© 2026 Phuket Elite Care Property Maintenance Co., Ltd.</span>
+    <span data-i18n="foot.preview">Concept preview — not the live site</span>
   </div>
 </footer>
 
-<script src="script.js?v=9"></script>
+<script src="i18n.js?v=10"></script>
+<script src="script.js?v=10"></script>
 </body>
 </html>

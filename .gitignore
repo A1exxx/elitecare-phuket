@@ -4,3 +4,6 @@ assets/images/*.JPG
 assets/images/photo-*.png
 assets/images/hero-fallback.png
 assets/images/logo.png
+
+# ...but the Open Graph cover must ship: social previews cannot read a .webp.
+!assets/images/og-cover.jpg
