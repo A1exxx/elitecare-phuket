@@ -9,7 +9,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=8">
+<link rel="preload" as="image" href="assets/images/photo-03-DSC03134.webp" fetchpriority="high">
+<link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
 
@@ -178,7 +179,7 @@
 <!-- ============ HERO ============ -->
 <section class="hero">
   <div class="hero-grid">
-    <div class="hero-content reveal">
+    <div class="hero-content">
       <p class="eyebrow">Property maintenance · Cherngtalay, Phuket</p>
       <h1>Villa care run to <em>hotel standards</em>, not marketplace guesswork.</h1>
       <p class="hero-lead">Cleaning, pool, garden, AC, plumbing, electrical, renovation and full rental management — handled by our own licensed engineers, not a directory of freelancers. Written quotes, real invoices, one team accountable for the whole villa.</p>
@@ -203,8 +204,8 @@
         </div>
       </div>
     </div>
-    <div class="hero-visual reveal">
-      <img src="assets/images/photo-03-DSC03134.webp" alt="Phuket Elite Care team cleaning the outdoor terrace of a modern Phuket villa" class="hero-img">
+    <div class="hero-visual">
+      <img src="assets/images/photo-03-DSC03134.webp" alt="Phuket Elite Care team cleaning the outdoor terrace of a modern Phuket villa" class="hero-img" fetchpriority="high" decoding="async">
       <div class="hero-card">
         <svg class="icon" width="20" height="20"><use href="#icon-timer"/></svg>
         <div>
@@ -600,6 +601,6 @@
   </div>
 </footer>
 
-<script src="script.js?v=8"></script>
+<script src="script.js?v=9"></script>
 </body>
 </html>
