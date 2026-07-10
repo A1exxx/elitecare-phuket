@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phuket Elite Care — Premium Villa &amp; Property Maintenance</title>
+<meta name="description" content="Licensed villa care in Phuket: cleaning, pool, garden, AC, plumbing, electrical, renovation and full rental management. Hotel-standard protocols, 24/7, EN·RU·TH·CN.">
+<link rel="icon" href="assets/images/logo-sm.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=8">
+</head>
+<body>
+
+<!-- ============ ICON SPRITE ============ -->
+<svg class="icon-sprite-defs" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+<defs>
+
+<symbol id="icon-sparkle" viewBox="0 0 24 24">
+<path d="M12 2C12.6 6.7 14.3 9.7 17 12C14.3 14.3 12.6 17.3 12 22C11.4 17.3 9.7 14.3 7 12C9.7 9.7 11.4 6.7 12 2Z"/>
+<path d="M19 3C19.3 4.6 20 5.3 21.6 5.6C20 5.9 19.3 6.6 19 8.2C18.7 6.6 18 5.9 16.4 5.6C18 5.3 18.7 4.6 19 3Z"/>
+</symbol>
+
+<symbol id="icon-pool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M1 9Q4.5 6 8 9T15 9T22 9"/>
+<path d="M1 15Q4.5 12 8 15T15 15T22 15"/>
+</symbol>
+
+<symbol id="icon-garden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M6 20C4 14 6 6 14 4C16 10 15 17 6 20Z"/>
+<path d="M7 19C9 14 11 10 14 5"/>
+</symbol>
+
+<symbol id="icon-ac" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<line x1="3" y1="7" x2="15" y2="7"/><circle cx="17.2" cy="7" r="2.2"/>
+<line x1="3" y1="12" x2="18" y2="12"/><circle cx="20.2" cy="12" r="2.2"/>
+<line x1="3" y1="17" x2="12" y2="17"/><circle cx="14.2" cy="17" r="2.2"/>
+</symbol>
+
+<symbol id="icon-plumbing" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M12 3C12 3 6 11 6 15.5A6 6 0 0 0 18 15.5C18 11 12 3 12 3Z"/>
+</symbol>
+
+<symbol id="icon-electrical" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+<path d="M13 2L5 14H10.5L9.5 22L19 10H12.5L13 2Z"/>
+</symbol>
+
+<symbol id="icon-renovation" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<rect x="4" y="3.5" width="13" height="5" rx="1.4"/>
+<path d="M17 6H19.6A1.4 1.4 0 0 1 21 7.4V10"/>
+<path d="M10.5 8.5V11.4A1 1 0 0 0 11.5 12.4H13"/>
+<rect x="9.6" y="12.4" width="4" height="8.1" rx="1.4"/>
+</symbol>
+
+<symbol id="icon-management" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M3.5 10.4L11 4.2L18.5 10.4V19.4A1.2 1.2 0 0 1 17.3 20.6H4.7A1.2 1.2 0 0 1 3.5 19.4Z"/>
+<circle cx="11" cy="12.8" r="2.1"/>
+<path d="M12.6 14.4L15.4 17.2"/>
+<path d="M14.2 16L15.4 14.8"/>
+</symbol>
+
+<symbol id="icon-checkup" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="10" cy="10" r="6.5"/>
+<line x1="14.8" y1="14.8" x2="20.5" y2="20.5"/>
+<path d="M6.8 10L9 12.2L13.3 7.5"/>
+</symbol>
+
+<symbol id="icon-star" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+<path d="M12 2.5L14.8 8.9L21.8 9.6L16.5 14.2L18.1 21.1L12 17.3L5.9 21.1L7.5 14.2L2.2 9.6L9.2 8.9Z"/>
+</symbol>
+
+<symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M12 3L19 6V11C19 16.2 15.7 19.7 12 21C8.3 19.7 5 16.2 5 11V6Z"/>
+<path d="M8.7 12L10.8 14.1L15.3 9.4"/>
+</symbol>
+
+<symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="12" cy="12" r="9"/>
+<line x1="12" y1="12" x2="12" y2="7"/>
+<line x1="12" y1="12" x2="16" y2="14"/>
+</symbol>
+
+<symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="12" cy="12" r="9"/>
+<ellipse cx="12" cy="12" rx="4" ry="9"/>
+<line x1="3" y1="12" x2="21" y2="12"/>
+</symbol>
+
+<symbol id="icon-timer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="12" cy="13" r="8"/>
+<line x1="12" y1="13" x2="12" y2="8"/>
+<line x1="10" y1="3" x2="14" y2="3"/>
+</symbol>
+
+<symbol id="icon-message" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M4 12a8 8 0 1 1 3.5 6.6L4 20l1.4-3.9A8 8 0 0 1 4 12Z"/>
+<path d="M8.5 10.8c.3 2 2 3.7 4 4"/>
+</symbol>
+
+<symbol id="icon-send" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+<path d="M3 12L21 4L14 21L11 13L3 12Z"/>
+</symbol>
+
+<symbol id="icon-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<rect x="3" y="5" width="18" height="15" rx="4"/>
+<circle cx="12" cy="12.5" r="4"/>
+<circle cx="17" cy="8.5" r="0.6" fill="currentColor" stroke="none"/>
+</symbol>
+
+<symbol id="icon-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M12 21C12 21 5 13.5 5 9A7 7 0 0 1 19 9C19 13.5 12 21 12 21Z"/>
+<circle cx="12" cy="9" r="2.3"/>
+</symbol>
+
+<symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<rect x="7" y="2" width="10" height="20" rx="2.5"/>
+<line x1="10.3" y1="18.3" x2="13.7" y2="18.3"/>
+</symbol>
+
+<symbol id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+<line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/>
+</symbol>
+
+<symbol id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+<line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/>
+</symbol>
+
+<symbol id="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+<line x1="4" y1="12" x2="19" y2="12"/><path d="M13 6L19 12L13 18"/>
+</symbol>
+
+<symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M4 12.5L9.5 18L20 6"/>
+</symbol>
+
+</defs>
+</svg>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a href="#top" class="logo">
+      <img src="assets/images/logo-sm.png" alt="Phuket Elite Care — Property Maintenance" width="172" height="57">
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#why-us">Why us</a>
+      <a href="#gallery">Our work</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="https://wa.me/66660748105" target="_blank" rel="noopener" class="btn btn-primary header-cta">
+      <svg class="icon" width="16" height="16"><use href="#icon-message"/></svg>
+      WhatsApp us
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+      <svg class="icon icon-open" width="22" height="22"><use href="#icon-menu"/></svg>
+      <svg class="icon icon-close" width="22" height="22"><use href="#icon-close"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+    <a href="#services">Services</a>
+    <a href="#why-us">Why us</a>
+    <a href="#gallery">Our work</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+    <a href="https://wa.me/66660748105" target="_blank" rel="noopener" class="btn btn-primary">Message us on WhatsApp</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-content reveal">
+      <p class="eyebrow">Property maintenance · Cherngtalay, Phuket</p>
+      <h1>Villa care run to <em>hotel standards</em>, not marketplace guesswork.</h1>
+      <p class="hero-lead">Cleaning, pool, garden, AC, plumbing, electrical, renovation and full rental management — handled by our own licensed engineers, not a directory of freelancers. Written quotes, real invoices, one team accountable for the whole villa.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary btn-lg">
+          <svg class="icon" width="18" height="18"><use href="#icon-message"/></svg>
+          Get a free quote
+        </a>
+        <a href="#services" class="btn btn-ghost btn-lg">
+          Explore services
+          <svg class="icon" width="16" height="16"><use href="#icon-arrow"/></svg>
+        </a>
+      </div>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <svg class="icon" width="18" height="18"><use href="#icon-star"/></svg>
+          <span><strong>5.0</strong> on Google · 23 reviews</span>
+        </div>
+        <div class="hero-meta-item">
+          <svg class="icon" width="18" height="18"><use href="#icon-globe"/></svg>
+          <span>EN · RU · TH · CN</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <img src="assets/images/photo-03-DSC03134.webp" alt="Phuket Elite Care team cleaning the outdoor terrace of a modern Phuket villa" class="hero-img">
+      <div class="hero-card">
+        <svg class="icon" width="20" height="20"><use href="#icon-timer"/></svg>
+        <div>
+          <strong>1-hour</strong>
+          <span>emergency inspection</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST BAR ============ -->
+<section class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="trust-item reveal">
+      <svg class="icon" width="22" height="22"><use href="#icon-shield"/></svg>
+      <span>Licensed &amp; insured</span>
+    </div>
+    <div class="trust-item reveal">
+      <svg class="icon" width="22" height="22"><use href="#icon-clock"/></svg>
+      <span>24/7 availability</span>
+    </div>
+    <div class="trust-item reveal">
+      <svg class="icon" width="22" height="22"><use href="#icon-sparkle"/></svg>
+      <span>10+ years on the island</span>
+    </div>
+    <div class="trust-item reveal">
+      <svg class="icon" width="22" height="22"><use href="#icon-star"/></svg>
+      <span>5.0★ · 23 Google reviews</span>
+    </div>
+    <div class="trust-item reveal">
+      <svg class="icon" width="22" height="22"><use href="#icon-globe"/></svg>
+      <span>EN · RU · TH · CN team</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="section-head reveal">
+    <p class="eyebrow">What we do</p>
+    <h2>Nine services, one accountable team</h2>
+    <p class="section-lead">Every job is carried out by our own in-house engineers and comes with a written scope before we start — no subcontractor roulette.</p>
+  </div>
+
+  <div class="bento">
+    <article class="bento-card bento-lg reveal">
+      <div class="bento-icon"><svg class="icon" width="26" height="26"><use href="#icon-management"/></svg></div>
+      <h3>Rental &amp; Property Management</h3>
+      <p>Full service from cleaning to guest check-in — we run the villa while you're away: turnovers, maintenance, supplier coordination, owner reporting.</p>
+      <span class="bento-tag">Flagship service</span>
+    </article>
+
+    <article class="bento-card reveal">
+      <div class="bento-icon"><svg class="icon" width="24" height="24"><use href="#icon-sparkle"/></svg></div>
+      <h3>Villa &amp; Property Cleaning</h3>
+      <p>Regular, deep, move-in/move-out and post-construction cleaning, tailored to villa or condo.</p>
+    </article>
+
+    <article class="bento-card reveal">
+      <div class="bento-icon"><svg class="icon" width="24" height="24"><use href="#icon-pool"/></svg></div>
+      <h3>Pool Maintenance</h3>
+      <p>Chemical balance, filtration, tiling and equipment checks on a fixed weekly schedule.</p>
+    </article>
+
+    <article class="bento-card reveal">
+      <div class="bento-icon"><svg class="icon" width="24" height="24"><use href="#icon-garden"/></svg></div>
+      <h3>Garden &amp; Landscaping</h3>
+      <p>Tropical garden upkeep, irrigation, trimming and seasonal planting.</p>
+    </article>
+
+    <article class="bento-card reveal">
+      <div class="bento-icon"><svg class="icon" width="24" height="24"><use href="#icon-ac"/></svg></div>
+      <h3>AC Service &amp; Installation</h3>
+      <p>Daikin and Carrier inverter systems — supply, install, service and repair.</p>
+    </article>
+
+    <article class="bento-card reveal">
+      <div class="bento-icon"><svg class="icon" width="24" height="24"><use href="#icon-plumbing"/></svg></div>
+      <h3>Plumbing</h3>
+      <p>Leak repair, fixture installation and water system troubleshooting.</p>
+    </article>
+
+    <article class="bento-card reveal">
+      <div class="bento-icon"><svg class="icon" width="24" height="24"><use href="#icon-electrical"/></svg></div>
+      <h3>Electrical</h3>
+      <p>Wiring, fixture installation and safety inspections by qualified electricians.</p>
+    </article>
+
+    <article class="bento-card bento-lg reveal">
+      <div class="bento-icon"><svg class="icon" width="26" height="26"><use href="#icon-checkup"/></svg></div>
+      <h3>Villa Technical Check-up</h3>
+      <p>A full inspection of AC, pool, plumbing and electrical, plus a complimentary clean and a QR-service code installed in the villa so you can call us in one scan. From <strong>฿5,900</strong>.</p>
+      <span class="bento-tag">Popular hook offer</span>
+    </article>
+
+    <article class="bento-card reveal">
+      <div class="bento-icon"><svg class="icon" width="24" height="24"><use href="#icon-renovation"/></svg></div>
+      <h3>Renovation &amp; Repair</h3>
+      <p>General contracting and refurbishment, from a single room to a full villa refresh.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="why-us" id="why-us">
+  <div class="why-grid">
+    <div class="why-visual reveal">
+      <img src="assets/images/photo-05.webp" alt="The Phuket Elite Care team" class="why-img">
+    </div>
+    <div class="why-content reveal">
+      <p class="eyebrow">Why owners choose us</p>
+      <h2>We're a registered company, not a name in a Telegram group.</h2>
+      <ul class="why-list">
+        <li>
+          <svg class="icon" width="20" height="20"><use href="#icon-check"/></svg>
+          <div><strong>Our own engineers.</strong> No marketplace of rotating freelancers — the same trained team returns to your villa every time.</div>
+        </li>
+        <li>
+          <svg class="icon" width="20" height="20"><use href="#icon-check"/></svg>
+          <div><strong>Paperwork that holds up.</strong> Signed quotes, tax invoices and receipts for every job — useful if you ever need to prove maintenance history.</div>
+        </li>
+        <li>
+          <svg class="icon" width="20" height="20"><use href="#icon-check"/></svg>
+          <div><strong>Hotel-standard protocols.</strong> The same checklists and QC used by luxury resorts, applied to private villas.</div>
+        </li>
+        <li>
+          <svg class="icon" width="20" height="20"><use href="#icon-check"/></svg>
+          <div><strong>Based in Cherngtalay.</strong> Minutes from Bang Tao, Laguna and the west coast — fast response, no cross-island delays.</div>
+        </li>
+        <li>
+          <svg class="icon" width="20" height="20"><use href="#icon-check"/></svg>
+          <div><strong>Talk to us in your language.</strong> Our team handles English, Russian, Thai and Chinese daily.</div>
+        </li>
+      </ul>
+      <a href="#contact" class="btn btn-primary">Talk to the team</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="gallery" id="gallery">
+  <div class="section-head reveal">
+    <p class="eyebrow">On site</p>
+    <h2>Real jobs, real villas</h2>
+    <p class="section-lead">Straight from our field team — no stock photography.</p>
+  </div>
+  <div class="gallery-grid">
+    <figure class="gallery-item span-2 reveal"><img src="assets/images/photo-02-DSC03206.webp" alt="Technician deep-cleaning a villa interior with a Kärcher extractor" loading="lazy"></figure>
+    <figure class="gallery-item reveal"><img src="assets/images/photo-04.webp" alt="Pressure-washing a villa driveway" loading="lazy"></figure>
+    <figure class="gallery-item reveal"><img src="assets/images/photo-06.webp" alt="Steam-cleaning curtains on site" loading="lazy"></figure>
+    <figure class="gallery-item reveal"><img src="assets/images/photo-01-DSC03140.webp" alt="Technical crew servicing a villa water tank" loading="lazy"></figure>
+    <figure class="gallery-item span-2 reveal"><img src="assets/images/photo-08-whatsapp.webp" alt="Phuket Elite Care branded service vehicle at a client villa" loading="lazy"></figure>
+    <figure class="gallery-item reveal"><img src="assets/images/photo-07.webp" alt="The Service 24/7 QR plaque installed inside a client villa" loading="lazy"></figure>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="process" id="process">
+  <div class="section-head reveal">
+    <p class="eyebrow">How it works</p>
+    <h2>From message to finished job</h2>
+  </div>
+  <ol class="process-steps">
+    <li class="reveal">
+      <span class="step-no">01</span>
+      <h3>Tell us what you need</h3>
+      <p>Pick a service and tell us whether it's a villa, townhouse or condo.</p>
+    </li>
+    <li class="reveal">
+      <span class="step-no">02</span>
+      <h3>Share a few details</h3>
+      <p>Bedrooms, bathrooms, approximate size in m² and your location pin.</p>
+    </li>
+    <li class="reveal">
+      <span class="step-no">03</span>
+      <h3>We schedule a free visit</h3>
+      <p>Our team inspects on site at a time that suits you — no obligation.</p>
+    </li>
+    <li class="reveal">
+      <span class="step-no">04</span>
+      <h3>Fixed quote, then we start</h3>
+      <p>Clear pricing before any work begins, VAT stated upfront — no surprises on the invoice.</p>
+    </li>
+  </ol>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="pricing" id="pricing">
+  <div class="section-head reveal">
+    <p class="eyebrow">Indicative pricing</p>
+    <h2>Transparent starting points</h2>
+    <p class="section-lead">Real numbers from our current rate card. Every villa is different, so the exact quote is always confirmed after a free assessment.</p>
+  </div>
+
+  <div class="price-grid">
+    <div class="price-card reveal"><span>Fresh clean</span><strong>฿500</strong></div>
+    <div class="price-card reveal"><span>General clean</span><strong>฿1,100</strong></div>
+    <div class="price-card reveal"><span>Deep clean</span><strong>฿3,500</strong></div>
+    <div class="price-card reveal"><span>Move-out clean</span><strong>฿1,500</strong></div>
+    <div class="price-card reveal"><span>Glass &amp; window clean</span><strong>฿3,000</strong></div>
+    <div class="price-card reveal"><span>Deep scrubbing</span><strong>฿7,500</strong></div>
+    <div class="price-card reveal"><span>AC install, 24,000 BTU inverter</span><strong>from ฿37,050</strong></div>
+    <div class="price-card price-card-accent reveal"><span>Villa Technical Check-up</span><strong>฿5,900</strong></div>
+  </div>
+  <p class="price-disclaimer reveal">Indicative pricing per standard job. Excludes 7% VAT. Final quote confirmed after a free on-site assessment.</p>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="reviews" id="reviews">
+  <div class="reviews-inner reveal">
+    <div class="reviews-badge">
+      <div class="reviews-stars">
+        <svg class="icon" width="22" height="22"><use href="#icon-star"/></svg>
+        <svg class="icon" width="22" height="22"><use href="#icon-star"/></svg>
+        <svg class="icon" width="22" height="22"><use href="#icon-star"/></svg>
+        <svg class="icon" width="22" height="22"><use href="#icon-star"/></svg>
+        <svg class="icon" width="22" height="22"><use href="#icon-star"/></svg>
+      </div>
+      <p class="reviews-score">5.0 out of 5</p>
+      <p class="reviews-count">Based on 23 verified reviews on Google</p>
+      <a href="https://maps.app.goo.gl/JwiWWraCebza6fqK9" target="_blank" rel="noopener" class="btn btn-ghost">
+        Read reviews on Google Maps
+        <svg class="icon" width="16" height="16"><use href="#icon-arrow"/></svg>
+      </a>
+    </div>
+    <p class="reviews-note">We'd rather show you the real listing than write quotes for you — see what owners in Bang Tao and Laguna actually say.</p>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="contact-grid">
+    <div class="contact-form-wrap reveal">
+      <p class="eyebrow">Get a quote</p>
+      <h2>Tell us about your property</h2>
+      <p class="section-lead">Fill this in and it opens a pre-filled WhatsApp message to our team — the same details our office asks for.</p>
+
+      <form id="lead-form" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="service">Service</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option>Villa &amp; Property Cleaning</option>
+              <option>Pool Maintenance</option>
+              <option>Garden &amp; Landscaping</option>
+              <option>AC Service &amp; Installation</option>
+              <option>Plumbing</option>
+              <option>Electrical</option>
+              <option>Renovation &amp; Repair</option>
+              <option>Rental &amp; Property Management</option>
+              <option>Villa Technical Check-up</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="property-type">Property type</label>
+            <select id="property-type" name="propertyType" required>
+              <option value="" disabled selected>Select type</option>
+              <option>Villa</option>
+              <option>Townhouse</option>
+              <option>Condo</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row form-row-3">
+          <div class="field">
+            <label for="bedrooms">Bedrooms</label>
+            <input type="number" id="bedrooms" name="bedrooms" min="0" placeholder="3">
+          </div>
+          <div class="field">
+            <label for="bathrooms">Bathrooms</label>
+            <input type="number" id="bathrooms" name="bathrooms" min="0" placeholder="2">
+          </div>
+          <div class="field">
+            <label for="size">Size, m²</label>
+            <input type="number" id="size" name="size" min="0" placeholder="220">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="location">Location in Phuket</label>
+            <input type="text" id="location" name="location" placeholder="e.g. Bang Tao, Laguna">
+          </div>
+          <div class="field">
+            <label for="visit-time">Preferred visit time</label>
+            <input type="text" id="visit-time" name="visitTime" placeholder="e.g. Tomorrow afternoon">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Your name<span class="req">*</span></label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="phone">WhatsApp / phone<span class="req">*</span></label>
+            <input type="tel" id="phone" name="phone" required autocomplete="tel">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="message">Anything else we should know</label>
+          <textarea id="message" name="message" rows="3" placeholder="Optional"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg btn-block">
+          <svg class="icon" width="18" height="18"><use href="#icon-message"/></svg>
+          Send via WhatsApp
+        </button>
+        <p class="form-hint">Opens WhatsApp with your details pre-filled — nothing is sent until you press send there.</p>
+      </form>
+    </div>
+
+    <div class="contact-info reveal">
+      <a class="map-card" href="https://maps.app.goo.gl/JwiWWraCebza6fqK9" target="_blank" rel="noopener">
+        <span class="map-card-pin">
+          <svg class="icon" width="22" height="22"><use href="#icon-pin"/></svg>
+        </span>
+        <span class="map-card-body">
+          <strong>Cherngtalay, Thalang</strong>
+          <span>Minutes from Bang Tao &amp; Laguna</span>
+        </span>
+        <svg class="icon map-card-arrow" width="18" height="18"><use href="#icon-arrow"/></svg>
+      </a>
+      <div class="info-card">
+        <div class="info-row">
+          <svg class="icon" width="20" height="20"><use href="#icon-pin"/></svg>
+          <div>
+            <strong>248/6 Moo 3 Srisoonthorn Road</strong>
+            <span>Cherngtalay, Thalang, Phuket 83110</span>
+          </div>
+        </div>
+        <div class="info-row">
+          <svg class="icon" width="20" height="20"><use href="#icon-phone"/></svg>
+          <div>
+            <strong>+66 66 074 8105</strong>
+            <span>WhatsApp &amp; Telegram, 24/7</span>
+          </div>
+        </div>
+        <div class="info-row">
+          <svg class="icon" width="20" height="20"><use href="#icon-clock"/></svg>
+          <div>
+            <strong>Office hours 09:00–18:00</strong>
+            <span>Emergency call-outs anytime</span>
+          </div>
+        </div>
+        <div class="info-socials">
+          <a href="https://wa.me/66660748105" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon" width="18" height="18"><use href="#icon-message"/></svg></a>
+          <a href="https://t.me/elitecare_phuket" target="_blank" rel="noopener" aria-label="Telegram"><svg class="icon" width="18" height="18"><use href="#icon-send"/></svg></a>
+          <a href="https://instagram.com/elitecare_phuket1" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" width="18" height="18"><use href="#icon-camera"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="assets/images/logo-sm.png" alt="Phuket Elite Care" width="150" height="50">
+      <p>Premium service for luxury real estate. Hotel-standard villa care across west-coast Phuket.</p>
+      <div class="info-socials">
+        <a href="https://wa.me/66660748105" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon" width="18" height="18"><use href="#icon-message"/></svg></a>
+        <a href="https://t.me/elitecare_phuket" target="_blank" rel="noopener" aria-label="Telegram"><svg class="icon" width="18" height="18"><use href="#icon-send"/></svg></a>
+        <a href="https://instagram.com/elitecare_phuket1" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" width="18" height="18"><use href="#icon-camera"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h3>Site</h3>
+      <a href="#services">Services</a>
+      <a href="#why-us">Why us</a>
+      <a href="#gallery">Our work</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+    </div>
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <a href="https://wa.me/66660748105" target="_blank" rel="noopener">+66 66 074 8105</a>
+      <a href="https://maps.app.goo.gl/JwiWWraCebza6fqK9" target="_blank" rel="noopener">Cherngtalay, Phuket</a>
+      <span>EN · RU · TH · CN</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Phuket Elite Care Property Maintenance Co., Ltd.</span>
+    <span>Concept preview — not the live site</span>
+  </div>
+</footer>
+
+<script src="script.js?v=8"></script>
+</body>
+</html>

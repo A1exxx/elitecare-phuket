@@ -1,0 +1,6 @@
+# Source photography kept locally only — the site ships the optimised .webp versions.
+assets/images/*.jpg
+assets/images/*.JPG
+assets/images/photo-*.png
+assets/images/hero-fallback.png
+assets/images/logo.png
