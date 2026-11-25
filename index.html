@@ -83,6 +83,12 @@
 <path d="M6.8 10L9 12.2L13.3 7.5"/>
 </symbol>
 
+<symbol id="icon-handyman" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M14.7 6.3a4 4 0 0 0-5.4 5.1L3.5 17.2a1.8 1.8 0 0 0 2.6 2.6l5.8-5.8a4 4 0 0 0 5.1-5.4l-2.4 2.4-2.2-.4-.4-2.2z"/>
+</symbol>
+<symbol id="icon-cube" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M12 2.8 20 7.3v9.4l-8 4.5-8-4.5V7.3z"/><path d="M4 7.3l8 4.5 8-4.5"/><path d="M12 11.8v9.4"/>
+</symbol>
 <symbol id="icon-star" viewBox="0 0 24 24" fill="currentColor" stroke="none">
 <path d="M12 2.5L14.8 8.9L21.8 9.6L16.5 14.2L18.1 21.1L12 17.3L5.9 21.1L7.5 14.2L2.2 9.6L9.2 8.9Z"/>
 </symbol>
@@ -400,7 +406,7 @@
 <section class="reno" id="renovation">
   <div class="reno-grid">
     <div class="reno-content reveal">
-      <p class="eyebrow" data-i18n="reno.eyebrow">Renovation &amp; major works</p>
+      <p class="eyebrow" data-i18n="reno.eyebrow">Renovation &amp; repairs</p>
       <h2>
         <span data-i18n="reno.h2a">We don't only keep villas clean.</span>
         <em data-i18n="reno.h2em">We rebuild them.</em>
@@ -436,6 +442,20 @@
             <span data-i18n="reno.b4sub">Electrical, water, air conditioning</span>
           </div>
         </li>
+        <li>
+          <svg class="icon" width="20" height="20"><use href="#icon-handyman"/></svg>
+          <div>
+            <strong data-i18n="reno.b5">Small household repairs</strong>
+            <span data-i18n="reno.b5sub">Doors, locks, furniture, sealant, fittings</span>
+          </div>
+        </li>
+        <li>
+          <svg class="icon" width="20" height="20"><use href="#icon-cube"/></svg>
+          <div>
+            <strong data-i18n="reno.b6">3D model when needed</strong>
+            <span data-i18n="reno.b6sub">See the result before work begins</span>
+          </div>
+        </li>
       </ul>
     </div>
 
@@ -457,7 +477,7 @@
 <section class="services" id="services">
   <div class="section-head reveal">
     <p class="eyebrow" data-i18n="svc.eyebrow">What we do</p>
-    <h2 data-i18n="svc.h2">Ten services, one accountable team</h2>
+    <h2 data-i18n="svc.h2">Twelve services, one accountable team</h2>
     <p class="section-lead" data-i18n="svc.lead">Every job is carried out by our own in-house crews.</p>
   </div>
 
@@ -518,7 +538,20 @@
       <p data-i18n="svc.laundryText">Our own laundry facility handles villa linen and towels.</p>
     </article>
 
-    <article class="bento-card bento-wide reveal">
+    <article class="bento-card reveal">
+      <div class="bento-icon"><svg class="icon" width="24" height="24"><use href="#icon-handyman"/></svg></div>
+      <h3 data-i18n="svc.handy">Handyman &amp; Small Repairs</h3>
+      <p data-i18n="svc.handyText">Doors and locks, shelves and curtain rails, furniture assembly, resealing, and the small faults that pile up around a house.</p>
+    </article>
+
+    <article class="bento-card bento-span2 reveal">
+      <div class="bento-icon"><svg class="icon" width="26" height="26"><use href="#icon-cube"/></svg></div>
+      <h3 data-i18n="svc.d3">3D Model Before Work Starts</h3>
+      <p data-i18n="svc.d3Text">Before a renovation we can build a 3D model of the room or the whole villa, so you see the layout and finishes before anything is taken apart.</p>
+      <span class="bento-tag" data-i18n="svc.d3Tag">When needed</span>
+    </article>
+
+    <article class="bento-card bento-wide bento-span2 reveal">
       <div class="bento-icon"><svg class="icon" width="26" height="26"><use href="#icon-checkup"/></svg></div>
       <h3 data-i18n="svc.checkup">Villa Technical Check-up</h3>
       <p>
@@ -683,6 +716,8 @@
               <option data-i18n="svc.elec">Electrical</option>
               <option data-i18n="svc.laundry">In-house Laundry</option>
               <option data-i18n="svc.checkup">Villa Technical Check-up</option>
+              <option data-i18n="svc.handy">Handyman &amp; Small Repairs</option>
+              <option data-i18n="svc.d3">3D Model Before Work Starts</option>
               <option data-i18n="form.svcOther">Something else</option>
             </select>
           </div>
