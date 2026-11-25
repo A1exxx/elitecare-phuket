@@ -632,3 +632,6 @@ form{ margin-top:30px; display:flex; flex-direction:column; gap:18px; }
 .reno-more:hover{color:var(--terracotta-700);}
 .price-cta{margin-top:28px;}
 @media (max-width:600px){.price-cta .btn{width:100%;justify-content:center;}}
+.trust-bar .trust-link,.trust-bar .trust-link span{color:#fff;opacity:1;}
+.trust-link{text-decoration:underline;text-decoration-color:rgba(255,255,255,.4);text-underline-offset:4px;}
+.trust-link:hover{text-decoration-color:#fff;}
