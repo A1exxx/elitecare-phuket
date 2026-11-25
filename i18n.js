@@ -165,6 +165,8 @@ window.EC_I18N = {
       "price.p8unit": "/ month",
       "price.from": "from",
       "price.disclaimer": "Indicative pricing per standard job. Excludes 7% VAT. Final quote confirmed after a free on-site assessment.",
+      "price.cta": "Get a quote on WhatsApp",
+      "price.ctaHref": "https://wa.me/77058864715?text=Hello%21%20I%20would%20like%20a%20price%20estimate.",
 
       "rev.score": "5.0 out of 5",
       "rev.count": "Based on 23 verified reviews on Google",
@@ -378,6 +380,8 @@ window.EC_I18N = {
       "price.p8unit": "/ месяц",
       "price.from": "от",
       "price.disclaimer": "Ориентировочные цены за стандартную работу. Без учёта НДС 7%. Итоговая смета — после бесплатного осмотра.",
+      "price.cta": "Получить расчёт в WhatsApp",
+      "price.ctaHref": "https://wa.me/77058864715?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20%D1%80%D0%B0%D1%81%D1%87%D1%91%D1%82.",
 
       "rev.score": "5.0 из 5",
       "rev.count": "По 23 проверенным отзывам на Google",
@@ -591,6 +595,8 @@ window.EC_I18N = {
       "price.p8unit": "/ เดือน",
       "price.from": "เริ่มต้น",
       "price.disclaimer": "ราคาโดยประมาณต่องานมาตรฐาน ยังไม่รวมภาษีมูลค่าเพิ่ม 7% ราคาสุดท้ายยืนยันหลังการสำรวจหน้างานฟรี",
+      "price.cta": "ขอใบเสนอราคาทาง WhatsApp",
+      "price.ctaHref": "https://wa.me/77058864715?text=%E0%B8%AA%E0%B8%A7%E0%B8%B1%E0%B8%AA%E0%B8%94%E0%B8%B5%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B8%9A%20%E0%B8%AD%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%82%E0%B8%AD%E0%B9%83%E0%B8%9A%E0%B9%80%E0%B8%AA%E0%B8%99%E0%B8%AD%E0%B8%A3%E0%B8%B2%E0%B8%84%E0%B8%B2",
 
       "rev.score": "5.0 เต็ม 5",
       "rev.count": "จาก 23 รีวิวจริงบน Google",
@@ -804,6 +810,8 @@ window.EC_I18N = {
       "price.p8unit": "/ 月",
       "price.from": "起",
       "price.disclaimer": "标准工作量的参考价格，不含 7% 增值税。最终报价于免费上门勘察后确认。",
+      "price.cta": "在 WhatsApp 获取报价",
+      "price.ctaHref": "https://wa.me/77058864715?text=%E6%82%A8%E5%A5%BD%EF%BC%81%E6%88%91%E6%83%B3%E8%8E%B7%E5%8F%96%E6%8A%A5%E4%BB%B7%E3%80%82",
 
       "rev.score": "5.0 / 5",
       "rev.count": "基于 Google 上 23 条真实评价",

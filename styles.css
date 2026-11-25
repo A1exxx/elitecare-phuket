@@ -630,3 +630,5 @@ form{ margin-top:30px; display:flex; flex-direction:column; gap:18px; }
 
 .reno-more{display:inline-block;margin-top:16px;font-weight:600;color:var(--terracotta-800);text-decoration:underline;text-underline-offset:4px;}
 .reno-more:hover{color:var(--terracotta-700);}
+.price-cta{margin-top:28px;}
+@media (max-width:600px){.price-cta .btn{width:100%;justify-content:center;}}
