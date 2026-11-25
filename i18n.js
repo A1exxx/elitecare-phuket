@@ -13,7 +13,7 @@ window.EC_I18N = {
   dict: {
     en: {
       "meta.title": "Phuket Elite Care — Premium Villa Care, Renovation & Management",
-      "meta.description": "Complete care for premium villas on Phuket: turnkey management from ฿17,000/month, full renovation, pool, garden, AC, in-house laundry. Licensed, 24/7, EN·RU·TH·CN.",
+      "meta.description": "Complete care for premium villas on Phuket: turnkey management from ฿17,000/month, full renovation, pool, garden, AC, in-house laundry. Official company, 24/7, EN·RU·TH.",
 
       "nav.package": "Package",
       "nav.services": "Services",
@@ -30,7 +30,7 @@ window.EC_I18N = {
       "hero.h1a": "Complete care for",
       "hero.h1em": "premium villas",
       "hero.h1b": "on Phuket.",
-      "hero.lead": "One licensed team for everything a villa needs — from a weekly pool check to a full refurbishment. Our own engineers, written quotes, real invoices.",
+      "hero.lead": "One team for everything a villa needs, from a weekly pool check to a full refurbishment. Our own engineers, written quotes, real invoices.",
       "hero.cta1": "Get a free quote",
       "hero.cta2": "See the turnkey package",
       "hero.stat1": "Turnkey management",
@@ -38,11 +38,11 @@ window.EC_I18N = {
       "hero.stat2": "5.0 on Google",
       "hero.stat2sub": "23 verified reviews",
 
-      "trust.licensed": "Licensed & insured",
+      "trust.licensed": "Official company, taxes paid",
       "trust.hours": "24/7 availability",
-      "trust.years": "10+ years on the island",
+      "trust.years": "5+ years on the island",
       "trust.reviews": "5.0★ · 23 Google reviews",
-      "trust.langs": "EN · RU · TH · CN team",
+      "trust.langs": "EN · RU · TH team",
 
       "pkg.eyebrow": "Turnkey villa management",
       "pkg.h2": "21 services in one package",
@@ -112,6 +112,7 @@ window.EC_I18N = {
       "reno.portfolioTitle": "Before / after photos of completed projects",
       "reno.portfolioText": "We send the renovation portfolio on request, matched to the kind of work your villa needs. Ask and we'll message it to you.",
       "reno.cta": "Ask for the renovation portfolio",
+      "reno.more": "How we run renovations",
 
       "why.eyebrow": "Why owners choose us",
       "why.h2": "A registered company, not a name in a Telegram group.",
@@ -124,7 +125,7 @@ window.EC_I18N = {
       "why.p4": "Based in Cherngtalay.",
       "why.p4text": "Minutes from Bang Tao, Laguna and the west coast — fast response, no cross-island delays.",
       "why.p5": "Talk to us in your language.",
-      "why.p5text": "Our team handles English, Russian, Thai and Chinese daily.",
+      "why.p5text": "Our team works in English, Russian and Thai every day.",
       "why.cta": "Talk to the team",
 
       "gal.eyebrow": "On site",
@@ -225,7 +226,7 @@ window.EC_I18N = {
 
     ru: {
       "meta.title": "Phuket Elite Care — обслуживание, ремонт и управление виллами",
-      "meta.description": "Полный уход за премиальными виллами на Пхукете: обслуживание под ключ от ฿17 000 в месяц, ремонт любой сложности, бассейн, сад, кондиционеры, своя прачечная. Лицензия, 24/7, EN·RU·TH·CN.",
+      "meta.description": "Полный уход за премиальными виллами на Пхукете: обслуживание под ключ от ฿17 000 в месяц, ремонт любой сложности, бассейн, сад, кондиционеры, своя прачечная. Официальная компания, 24/7, EN·RU·TH.",
 
       "nav.package": "Пакет",
       "nav.services": "Услуги",
@@ -242,7 +243,7 @@ window.EC_I18N = {
       "hero.h1a": "Полный уход за",
       "hero.h1em": "премиальными виллами",
       "hero.h1b": "на Пхукете.",
-      "hero.lead": "Одна лицензированная команда на всё, что нужно вилле, — от еженедельной проверки бассейна до капитального ремонта. Свои инженеры, письменные сметы, настоящие счета.",
+      "hero.lead": "Одна команда на всё, что нужно вилле: от еженедельной проверки бассейна до капитального ремонта. Свои инженеры, письменные сметы, настоящие счета.",
       "hero.cta1": "Получить расчёт",
       "hero.cta2": "Пакет «под ключ»",
       "hero.stat1": "Обслуживание под ключ",
@@ -250,11 +251,11 @@ window.EC_I18N = {
       "hero.stat2": "5.0 на Google",
       "hero.stat2sub": "23 проверенных отзыва",
 
-      "trust.licensed": "Лицензия и страховка",
+      "trust.licensed": "Официальная компания, платим налоги",
       "trust.hours": "Доступны 24/7",
-      "trust.years": "10+ лет на острове",
+      "trust.years": "5+ лет на острове",
       "trust.reviews": "5.0★ · 23 отзыва на Google",
-      "trust.langs": "Команда: EN · RU · TH · CN",
+      "trust.langs": "Команда: EN · RU · TH",
 
       "pkg.eyebrow": "Управление виллой под ключ",
       "pkg.h2": "21 услуга в одном пакете",
@@ -324,6 +325,7 @@ window.EC_I18N = {
       "reno.portfolioTitle": "Фото «до / после» по выполненным объектам",
       "reno.portfolioText": "Портфолио по ремонту присылаем по запросу и подбираем под тот тип работ, который нужен вашей вилле. Напишите — вышлем в мессенджер.",
       "reno.cta": "Запросить портфолио ремонтов",
+      "reno.more": "Как мы ведём ремонт",
 
       "why.eyebrow": "Почему выбирают нас",
       "why.h2": "Зарегистрированная компания, а не имя в телеграм-чате.",
@@ -336,7 +338,7 @@ window.EC_I18N = {
       "why.p4": "Офис в Чернгталае.",
       "why.p4text": "Минуты до Банг Тао, Лагуны и западного побережья — быстрый выезд без поездок через весь остров.",
       "why.p5": "Говорим на вашем языке.",
-      "why.p5text": "Команда ежедневно работает на английском, русском, тайском и китайском.",
+      "why.p5text": "Команда каждый день работает на английском, русском и тайском.",
       "why.cta": "Связаться с командой",
 
       "gal.eyebrow": "На объекте",
@@ -454,7 +456,7 @@ window.EC_I18N = {
       "hero.h1a": "ดูแลครบวงจรสำหรับ",
       "hero.h1em": "วิลล่าระดับพรีเมียม",
       "hero.h1b": "ในภูเก็ต",
-      "hero.lead": "ทีมงานจดทะเบียนถูกต้องทีมเดียว ดูแลทุกอย่างที่วิลล่าต้องการ ตั้งแต่ตรวจสระว่ายน้ำรายสัปดาห์ ไปจนถึงงานรีโนเวททั้งหลัง ช่างของเราเอง ใบเสนอราคาเป็นลายลักษณ์อักษร ใบกำกับภาษีจริง",
+      "hero.lead": "ทีมงานทีมเดียว ดูแลทุกอย่างที่วิลล่าต้องการ ตั้งแต่ตรวจสระว่ายน้ำรายสัปดาห์ ไปจนถึงงานรีโนเวททั้งหลัง ช่างของเราเอง ใบเสนอราคาเป็นลายลักษณ์อักษร ใบกำกับภาษีจริง",
       "hero.cta1": "ขอใบเสนอราคาฟรี",
       "hero.cta2": "ดูแพ็กเกจเหมาจ่าย",
       "hero.stat1": "บริหารแบบเหมาจ่าย",
@@ -462,11 +464,11 @@ window.EC_I18N = {
       "hero.stat2": "5.0 บน Google",
       "hero.stat2sub": "จาก 23 รีวิวจริง",
 
-      "trust.licensed": "จดทะเบียนและมีประกัน",
+      "trust.licensed": "บริษัทจดทะเบียน เสียภาษีถูกต้อง",
       "trust.hours": "พร้อมให้บริการ 24/7",
-      "trust.years": "ประสบการณ์บนเกาะกว่า 10 ปี",
+      "trust.years": "ประสบการณ์บนเกาะกว่า 5 ปี",
       "trust.reviews": "5.0★ · 23 รีวิวบน Google",
-      "trust.langs": "ทีมงาน EN · RU · TH · CN",
+      "trust.langs": "ทีมงาน EN · RU · TH",
 
       "pkg.eyebrow": "บริหารวิลล่าแบบเหมาจ่าย",
       "pkg.h2": "21 บริการในแพ็กเกจเดียว",
@@ -536,6 +538,7 @@ window.EC_I18N = {
       "reno.portfolioTitle": "ภาพก่อน / หลัง ของงานที่ทำเสร็จแล้ว",
       "reno.portfolioText": "เราส่งผลงานรีโนเวทให้ตามคำขอ โดยเลือกให้ตรงกับงานที่วิลล่าของคุณต้องการ ทักมาแล้วเราส่งให้ทางแชท",
       "reno.cta": "ขอดูผลงานรีโนเวท",
+      "reno.more": "ขั้นตอนงานรีโนเวทของเรา",
 
       "why.eyebrow": "ทำไมเจ้าของวิลล่าจึงเลือกเรา",
       "why.h2": "บริษัทจดทะเบียน ไม่ใช่แค่ชื่อในกลุ่มแชท",
@@ -548,7 +551,7 @@ window.EC_I18N = {
       "why.p4": "สำนักงานอยู่เชิงทะเล",
       "why.p4text": "ห่างจากบางเทา ลากูน่า และชายฝั่งตะวันตกเพียงไม่กี่นาที เข้างานเร็ว ไม่ต้องข้ามเกาะ",
       "why.p5": "คุยกับเราด้วยภาษาของคุณ",
-      "why.p5text": "ทีมงานใช้ภาษาอังกฤษ รัสเซีย ไทย และจีนทุกวัน",
+      "why.p5text": "ทีมงานใช้ภาษาอังกฤษ รัสเซีย และไทยทุกวัน",
       "why.cta": "คุยกับทีมงาน",
 
       "gal.eyebrow": "หน้างานจริง",
@@ -649,7 +652,7 @@ window.EC_I18N = {
 
     zh: {
       "meta.title": "Phuket Elite Care — 高端别墅维护、翻新与托管",
-      "meta.description": "普吉岛高端别墅全方位养护：包干式托管每月 17,000 泰铢起，整体翻新、泳池、花园、空调、自有洗衣房。持牌经营，24/7 服务，支持中英俄泰四语。",
+      "meta.description": "普吉岛高端别墅全方位养护：包干式托管每月 17,000 泰铢起，整体翻新、泳池、花园、空调、自有洗衣房。正规公司，24/7 服务，支持英俄泰三语。",
 
       "nav.package": "套餐",
       "nav.services": "服务",
@@ -666,7 +669,7 @@ window.EC_I18N = {
       "hero.h1a": "为普吉岛的",
       "hero.h1em": "高端别墅",
       "hero.h1b": "提供全方位养护。",
-      "hero.lead": "一支持牌团队负责别墅的一切——从每周泳池检测到整栋翻新。自有工程师、书面报价、正规发票。",
+      "hero.lead": "一支团队负责别墅的一切：从每周泳池检测到整栋翻新。自有工程师、书面报价、正规发票。",
       "hero.cta1": "获取免费报价",
       "hero.cta2": "查看包干套餐",
       "hero.stat1": "包干式托管",
@@ -674,11 +677,11 @@ window.EC_I18N = {
       "hero.stat2": "Google 评分 5.0",
       "hero.stat2sub": "23 条真实评价",
 
-      "trust.licensed": "持牌并投保",
+      "trust.licensed": "正规注册公司，依法纳税",
       "trust.hours": "24/7 随时响应",
-      "trust.years": "深耕海岛 10 年以上",
+      "trust.years": "深耕海岛 5 年以上",
       "trust.reviews": "5.0★ · 23 条 Google 评价",
-      "trust.langs": "团队支持 中·英·俄·泰",
+      "trust.langs": "团队支持 英·俄·泰",
 
       "pkg.eyebrow": "别墅包干托管",
       "pkg.h2": "21 项服务，一个套餐",
@@ -748,6 +751,7 @@ window.EC_I18N = {
       "reno.portfolioTitle": "已完工项目的施工前后对比照",
       "reno.portfolioText": "翻新案例集按需发送，并会挑选与您别墅所需工程相符的案例。发条消息，我们直接发给您。",
       "reno.cta": "索取翻新案例集",
+      "reno.more": "了解我们的翻新流程",
 
       "why.eyebrow": "业主为何选择我们",
       "why.h2": "一家注册公司，而不是群聊里的一个名字。",
@@ -760,7 +764,7 @@ window.EC_I18N = {
       "why.p4": "办公室位于 Cherngtalay。",
       "why.p4text": "距离 Bang Tao、Laguna 与西海岸仅数分钟——响应迅速，无需跨岛奔波。",
       "why.p5": "用您的语言沟通。",
-      "why.p5text": "我们的团队每天使用英语、俄语、泰语和中文工作。",
+      "why.p5text": "我们的团队每天使用英语、俄语和泰语工作。",
       "why.cta": "联系团队",
 
       "gal.eyebrow": "施工现场",

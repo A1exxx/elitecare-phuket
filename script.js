@@ -3,7 +3,7 @@
 
   var I18N = window.EC_I18N;
   var STORE_KEY = "ec_lang";
-  var WA = "https://wa.me/66660748105";
+  var WA = "https://wa.me/77058864715";
 
   /* ---------- language ---------- */
   function supported(code) {
